@@ -22,7 +22,7 @@
         <img src="assets/icons/abero-logo.png" alt="ABERO logo" class="site-logo" />
       </a>
 
-      <button class="mobile-menu-toggle" aria-label="Open menu">
+      <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -37,7 +37,7 @@
       </nav>
 
       <div class="header-actions">
-        <a href="#contact" class="btn btn-primary">
+        <a href="contact.html#inquiry" class="btn btn-primary">
           Send Inquiry
           <span>→</span>
         </a>
@@ -137,13 +137,13 @@
         </article>
 
         <article class="trust-card">
-          <div class="trust-icon blue">▣</div>
+          <div class="trust-icon">▣</div>
           <h3>1000+ Factories</h3>
           <p>Curated supplier network across toy categories, plastics, plush, and accessories.</p>
         </article>
 
         <article class="trust-card">
-          <div class="trust-icon blue">◎</div>
+          <div class="trust-icon">◎</div>
           <h3>Export Support</h3>
           <p>Documentation, packaging, inspection, and shipment coordination for global markets.</p>
         </article>
@@ -227,7 +227,7 @@
         <div class="process-grid">
           <article class="process-card">
             <div class="process-number">01</div>
-            <img src="assets/images/injection-molding.jpg" alt="Injection molding production" />
+            <img src="assets/images/prod-5.webp" alt="Injection molding production" />
             <div class="process-content">
               <h3>Injection Molding</h3>
               <p>Selected production capabilities for key toy categories and plastic components.</p>
@@ -236,7 +236,7 @@
 
           <article class="process-card">
             <div class="process-number">02</div>
-            <img src="assets/images/assembly.jpg" alt="Toy assembly line" />
+            <img src="assets/images/prod-4.webp" alt="Toy assembly line" />
             <div class="process-content">
               <h3>Assembly</h3>
               <p>Process coordination for product assembly, packaging, and shipment readiness.</p>
@@ -245,7 +245,7 @@
 
           <article class="process-card">
             <div class="process-number">03</div>
-            <img src="assets/images/quality-check.jpg" alt="Quality control inspection" />
+            <img src="assets/images/prod-3.webp" alt="Quality control inspection" />
             <div class="process-content">
               <h3>Quality Control</h3>
               <p>Inspection support before production release and before final container loading.</p>
@@ -254,7 +254,7 @@
 
           <article class="process-card">
             <div class="process-number">04</div>
-            <img src="assets/images/packaging.jpg" alt="Toy packaging and cartons" />
+            <img src="assets/images/storage-1.webp" alt="Toy packaging and cartons" />
             <div class="process-content">
               <h3>Packaging</h3>
               <p>Private label packaging, carton planning, and export-ready presentation.</p>
@@ -278,18 +278,23 @@
       <div class="container">
         <div class="section-pill">
           <span></span>
-          Factory Tour
+          Inside ABERO
         </div>
 
-        <h2>Show the complete process in 2–3 minutes.</h2>
+        <h2>A closer look at how we work.</h2>
 
         <p class="section-intro">
-          A short factory tour video showing the office, showroom, production,
-          warehouse, quality control, and container loading process.
+          Visit our Shantou office, showroom, production floor, warehouse,
+          and quality-control operation in a one-minute tour.
         </p>
 
         <div class="video-card">
-          <video poster="assets/images/hero-factory.jpg">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="assets/images/main-building-night.webp"
+          >
             <source src="assets/videos/intro.mp4" type="video/mp4" />
           </video>
 
@@ -298,8 +303,8 @@
           </button>
 
           <div class="video-caption">
-            <p>Factory Tour</p>
-            <h3>Inside ABERO — production, QC, and export floor.</h3>
+            <p>ABERO · SHANTOU</p>
+            <h3>Office, showroom, production, and quality control.</h3>
           </div>
         </div>
       </div>
@@ -346,11 +351,11 @@
             </article>
           </div>
 
-          <a href="china-sourcing.html" class="btn btn-outline">Explore sourcing services <span>→</span></a>
+          <a href="sourcing.html" class="btn btn-outline">Explore sourcing services <span>→</span></a>
         </div>
 
         <div class="sourcing-visual">
-          <img src="assets/images/showroom.jpg" alt="ABERO sourcing showroom" />
+          <img src="assets/images/showroom-wide.webp" alt="ABERO sourcing showroom" />
 
           <div class="sourcing-info-grid">
             <article>
@@ -380,7 +385,7 @@
     </section>
 
     <!-- Certifications -->
-    <section class="cert-section dark-section">
+    <section class="cert-section dark-section" id="certifications">
       <div class="container">
         <div class="section-pill section-pill-dark">
           <span></span>
@@ -426,28 +431,28 @@
 
           <div class="carousel-track">
             <article class="gallery-slide">
-              <img src="assets/images/warehouse.jpg" alt="Warehouse" />
+              <img src="assets/images/storage.webp" alt="Warehouse storage area" />
               <p>Warehouse</p>
             </article>
 
             <article class="gallery-slide active">
-              <img src="assets/images/quality-check.jpg" alt="Quality Check" />
+              <img src="assets/images/prod-5.webp" alt="Production quality check" />
               <p>Quality Check</p>
             </article>
 
             <article class="gallery-slide">
-              <img src="assets/images/container-loading.jpg" alt="Container Loading" />
-              <p>Container Loading</p>
+              <img src="assets/images/prod-4.webp" alt="Production and packing area" />
+              <p>Production &amp; Packing</p>
             </article>
 
             <article class="gallery-slide">
-              <img src="assets/images/showroom.jpg" alt="Showroom" />
+              <img src="assets/images/showroom-side.webp" alt="Showroom" />
               <p>Showroom</p>
             </article>
 
             <article class="gallery-slide">
-              <img src="assets/images/exhibition.jpg" alt="Trade Fair" />
-              <p>Trade Fair</p>
+              <img src="assets/images/awards.webp" alt="ABERO awards display" />
+              <p>Awards &amp; Recognition</p>
             </article>
           </div>
 
@@ -465,36 +470,36 @@
           News &amp; Exhibitions
         </div>
 
-        <h2>Meet ABERO at global toy fairs.</h2>
+        <h2>Toy fairs on the buyer calendar.</h2>
 
         <div class="news-grid">
           <article class="news-card" data-modal="hong-kong">
-            <img src="assets/images/exhibition.jpg" alt="Hong Kong Toys & Games Fair" />
+            <img src="assets/images/showroom-podium-1.webp" alt="Product display placeholder for Hong Kong Toys and Games Fair update" />
             <div>
               <p class="card-label">Hong Kong Fair</p>
               <h3>Hong Kong Toys &amp; Games Fair</h3>
               <p>International toy industry event for buyers, brands, and manufacturers.</p>
-              <button type="button">View Details</button>
+              <button type="button">View Event Note</button>
             </div>
           </article>
 
           <article class="news-card" data-modal="canton">
-            <img src="assets/images/exhibition.jpg" alt="Canton Fair" />
+            <img src="assets/images/showroom-conf.webp" alt="Showroom placeholder for Canton Fair update" />
             <div>
               <p class="card-label">Canton Fair</p>
               <h3>Canton Fair</h3>
               <p>Trade fair connecting Chinese manufacturers with global buyers.</p>
-              <button type="button">View Details</button>
+              <button type="button">View Event Note</button>
             </div>
           </article>
 
           <article class="news-card" data-modal="nuremberg">
-            <img src="assets/images/exhibition.jpg" alt="Nuremberg Toy Fair" />
+            <img src="assets/images/awards.webp" alt="Awards display placeholder for Nuremberg Toy Fair update" />
             <div>
               <p class="card-label">Nuremberg Fair</p>
               <h3>Nuremberg Toy Fair</h3>
               <p>International toy market event focused on sourcing and product trends.</p>
-              <button type="button">View Details</button>
+              <button type="button">View Event Note</button>
             </div>
           </article>
         </div>
@@ -519,13 +524,13 @@
           </p>
 
           <div class="contact-buttons">
-            <a href="#" class="btn btn-outline">WhatsApp</a>
-            <a href="#" class="btn btn-outline">WeChat QR</a>
+            <a href="contact.html#inquiry" class="btn btn-outline">Request WhatsApp reply</a>
+            <a href="contact.html#inquiry" class="btn btn-outline">Request WeChat contact</a>
             <a href="contact.html" class="text-link">Or visit contact page →</a>
           </div>
         </div>
 
-        <form class="contact-form" action="#" method="POST">
+        <form class="contact-form" action="#" method="POST" data-demo-form>
           <h3>Send an inquiry</h3>
           <p>Share your project details. Our team will reply with the best production or sourcing path.</p>
 
@@ -552,6 +557,7 @@
           </label>
 
           <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          <p class="form-status" aria-live="polite"></p>
         </form>
       </div>
     </section>
@@ -561,7 +567,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <img src="assets/logo/abero-logo.jpg" alt="ABERO logo" class="footer-logo" />
+        <img src="assets/icons/abero-logo.png" alt="ABERO logo" class="footer-logo" />
         <p>Toy manufacturing and sourcing partner based in Shantou, China.</p>
       </div>
 
@@ -569,24 +575,23 @@
         <h3>Company</h3>
         <a href="about.html">About Us</a>
         <a href="manufacturing.html">Manufacturing</a>
-        <a href="china-sourcing.html">China Sourcing</a>
+        <a href="sourcing.html">China Sourcing</a>
         <a href="news.html">News</a>
       </div>
 
       <div>
         <h3>Services</h3>
         <a href="manufacturing.html">OEM/ODM</a>
-        <a href="china-sourcing.html">Factory Coordination</a>
+        <a href="sourcing.html">Factory Coordination</a>
         <a href="#certifications">Quality Control</a>
         <a href="#contact">Export Support</a>
       </div>
 
       <div>
         <h3>Contact</h3>
-        <p>Email: info@example.com</p>
-        <p>WhatsApp: +86 placeholder</p>
-        <p>WeChat: placeholder</p>
-        <p>Shantou, China</p>
+        <a href="contact.html#inquiry">Send an inquiry</a>
+        <p>Shantou, Guangdong, China</p>
+        <p>OEM / ODM · Sourcing · Export</p>
       </div>
     </div>
 
@@ -608,7 +613,7 @@
       </p>
 
       <div class="modal-gallery">
-        <img src="assets/images/exhibition.jpg" alt="Exhibition photo" />
+        <img src="assets/images/showroom-podium-1.webp" alt="ABERO showroom display" />
       </div>
     </div>
   </div>
