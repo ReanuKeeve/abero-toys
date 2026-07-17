@@ -204,6 +204,62 @@ p {
   color: var(--magenta);
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--soft-white);
+}
+
+.language-option {
+  min-width: 36px;
+  min-height: 30px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.language-option:hover {
+  color: var(--blue);
+}
+
+.language-option.is-active {
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: 0 5px 14px rgba(14, 44, 90, 0.2);
+}
+
+.language-option:focus-visible {
+  outline: 3px solid rgba(22, 119, 255, 0.25);
+  outline-offset: 2px;
+}
+
+.language-russian .main-nav {
+  gap: 24px;
+}
+
+.language-russian .hero-copy-block h1 {
+  max-width: 860px;
+  font-size: clamp(3.1rem, 5.8vw, 5.9rem);
+}
+
+.language-russian .page-hero-inner h1 {
+  font-size: clamp(3.2rem, 6vw, 5.8rem);
+  letter-spacing: -0.045em;
+}
+
+.language-russian .hero-stats-fsbig strong {
+  font-size: 1.5rem;
+}
+
 .header-actions {
   display: flex;
   align-items: center;
@@ -540,6 +596,69 @@ p {
   font-weight: 900;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+/*
+ * Wide screens are not always tall screens. Keep the desktop hero cinematic
+ * on large displays, but compact its typography and spacing when the available
+ * height is limited so the flowing copy cannot collide with the bottom rail.
+ */
+@media (min-width: 821px) and (max-height: 1050px) {
+  .hero-fsbig,
+  .hero-fsbig-inner {
+    min-height: max(calc(100svh - var(--header-height)), 760px);
+  }
+
+  .hero-fsbig-inner {
+    padding-top: clamp(34px, 5vh, 58px);
+    padding-bottom: 30px;
+  }
+
+  .hero-copy-block {
+    max-width: 940px;
+  }
+
+  .hero-copy-block .section-pill {
+    margin-bottom: 14px;
+    padding-block: 6px;
+  }
+
+  .hero-copy-block h1 {
+    max-width: 940px;
+    margin-bottom: 14px;
+    font-size: clamp(3.4rem, 5.2vw, 5.7rem);
+    line-height: 0.94;
+  }
+
+  .language-russian .hero-copy-block h1 {
+    max-width: 980px;
+    font-size: clamp(3.2rem, 4.8vw, 5.2rem);
+  }
+
+  .hero-copy-block .location-line {
+    margin-bottom: 12px;
+  }
+
+  .hero-copy-block .hero-text {
+    max-width: 720px;
+    margin-bottom: 20px;
+    font-size: 1.08rem;
+    line-height: 1.5;
+  }
+
+  .hero-slide-info,
+  .hero-controls {
+    bottom: 112px;
+  }
+
+  .hero-stats-fsbig {
+    bottom: 28px;
+    padding-top: 18px;
+  }
+
+  .hero-stats-fsbig strong {
+    font-size: 1.5rem;
+  }
 }
 
 /* =========================
@@ -1398,6 +1517,11 @@ p {
     gap: 20px;
   }
 
+  .language-russian .main-nav {
+    gap: 16px;
+    font-size: 0.94rem;
+  }
+
   .process-grid,
   .trust-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1452,6 +1576,15 @@ p {
     order: 5;
   }
 
+  .main-nav .language-switcher {
+    margin-top: 4px;
+  }
+
+  .language-russian .main-nav {
+    gap: 16px;
+    font-size: 1rem;
+  }
+
   .main-nav.is-open {
     display: flex;
   }
@@ -1484,6 +1617,10 @@ p {
 
   .hero-copy-block h1 {
     font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .language-russian .hero-copy-block h1 {
+    font-size: clamp(2.6rem, 10vw, 4.2rem);
   }
 
   .hero-copy-block .hero-text {
@@ -2452,6 +2589,10 @@ p {
 
   .page-hero-inner h1 {
     font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .language-russian .page-hero-inner h1 {
+    font-size: clamp(2.7rem, 10.5vw, 4.3rem);
   }
 
   .page-hero-inner > p {
