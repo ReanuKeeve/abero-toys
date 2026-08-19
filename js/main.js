@@ -1,4 +1,5 @@
-const translations = window.ABERO_TRANSLATIONS || { ru: {} };
+const translations = window.ABERO_TRANSLATIONS || { ru: {}, es: {} };
+const supportedLanguages = ["en", "ru", "es"];
 const textOriginals = new WeakMap();
 const elementTextOriginals = new WeakMap();
 const attributeOriginals = new WeakMap();
@@ -14,9 +15,9 @@ function normalizeTranslationKey(value) {
 }
 
 function translate(value, language = activeLanguage) {
-  if (language !== "ru") return value;
+  if (language === "en") return value;
   const key = normalizeTranslationKey(value);
-  return translations.ru?.[key] || value;
+  return translations[language]?.[key] || value;
 }
 
 function ensureLanguageSwitcher() {
@@ -30,6 +31,7 @@ function ensureLanguageSwitcher() {
   switcher.innerHTML = `
     <button class="language-option" type="button" data-language="en" aria-label="Switch to English">EN</button>
     <button class="language-option" type="button" data-language="ru" aria-label="Switch to Russian">RU</button>
+    <button class="language-option" type="button" data-language="es" aria-label="Switch to Spanish">ES</button>
   `;
 
   navigation.appendChild(switcher);
@@ -54,7 +56,7 @@ function translateTextNodes(language) {
 
     if (!elementTextOriginals.has(element)) elementTextOriginals.set(element, current);
     const original = elementTextOriginals.get(element);
-    element.textContent = language === "ru" ? translate(original, language) : original;
+    element.textContent = language === "en" ? original : translate(original, language);
     handledElements.add(element);
   });
 
@@ -71,7 +73,7 @@ function translateTextNodes(language) {
 
     if (!textOriginals.has(node)) textOriginals.set(node, current);
     const original = textOriginals.get(node);
-    node.nodeValue = language === "ru" ? translate(original, language) : original;
+    node.nodeValue = language === "en" ? original : translate(original, language);
   });
 }
 
@@ -88,28 +90,29 @@ function translatePageAttributes(language) {
 
       if (!(attribute in originals)) originals[attribute] = element.getAttribute(attribute);
       const original = originals[attribute];
-      element.setAttribute(attribute, language === "ru" ? translate(original, language) : original);
+      element.setAttribute(attribute, language === "en" ? original : translate(original, language));
     });
   });
 }
 
 function applyLanguage(language) {
-  activeLanguage = language === "ru" ? "ru" : "en";
+  activeLanguage = supportedLanguages.includes(language) ? language : "en";
   document.documentElement.lang = activeLanguage;
   document.documentElement.dataset.language = activeLanguage;
   document.body.classList.toggle("language-russian", activeLanguage === "ru");
+  document.body.classList.toggle("language-spanish", activeLanguage === "es");
 
   translateTextNodes(activeLanguage);
   translatePageAttributes(activeLanguage);
 
-  document.title = activeLanguage === "ru"
-    ? translate(originalDocumentTitle, activeLanguage)
-    : originalDocumentTitle;
+  document.title = activeLanguage === "en"
+    ? originalDocumentTitle
+    : translate(originalDocumentTitle, activeLanguage);
 
   if (descriptionMeta) {
     descriptionMeta.setAttribute(
       "content",
-      activeLanguage === "ru" ? translate(originalDescription, activeLanguage) : originalDescription
+      activeLanguage === "en" ? originalDescription : translate(originalDescription, activeLanguage)
     );
   }
 
@@ -136,7 +139,8 @@ function applyLanguage(language) {
 
 function getSavedLanguage() {
   try {
-    return localStorage.getItem("abero-language") === "ru" ? "ru" : "en";
+    const savedLanguage = localStorage.getItem("abero-language");
+    return supportedLanguages.includes(savedLanguage) ? savedLanguage : "en";
   } catch (error) {
     return "en";
   }
@@ -335,5 +339,119 @@ document.querySelectorAll("[data-demo-form]").forEach((form) => {
   });
 });
 
+function setupSiteMotion() {
+  const header = document.querySelector(".site-header");
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const updateHeader = () => {
+    header?.classList.toggle("is-scrolled", window.scrollY > 18);
+  };
+
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
+
+  if (reducedMotion) return;
+
+  const revealItems = new Set();
+  const revealSelectors = [
+    ".page-hero-inner > *",
+    ".hero-copy-block > *",
+    ".section-heading > *",
+    ".content-copy > *",
+    ".section-copy > *",
+    ".page-cta-inner > *",
+    ".manufacturing-flow",
+    ".manufacturing-workflow",
+    ".manufacturing-quality-gates",
+    ".factory-profile-visual",
+    ".sourcing-network",
+    ".video-card",
+    ".facility-carousel",
+    ".card-carousel",
+    ".gallery-carousel",
+    ".image-frame",
+    ".contact-form"
+  ];
+
+  revealSelectors.forEach((selector) => {
+    document.querySelectorAll(selector).forEach((element) => revealItems.add(element));
+  });
+
+  const staggerGroups = [
+    ".capability-grid",
+    ".manufacturing-steps",
+    ".manufacturing-evidence",
+    ".trust-grid",
+    ".factory-profile-grid",
+    ".manufacturing-workflow",
+    ".manufacturing-quality-gates ol",
+    ".photo-story-grid",
+    ".feature-grid",
+    ".media-grid",
+    ".metric-grid",
+    ".network-offices",
+    ".network-pipeline",
+    ".region-grid",
+    ".range-steps",
+    ".event-grid",
+    ".event-list",
+    ".news-grid",
+    ".cert-grid",
+    ".footer-grid"
+  ];
+
+  staggerGroups.forEach((selector) => {
+    document.querySelectorAll(selector).forEach((group) => {
+      Array.from(group.children).forEach((element, index) => {
+        element.style.setProperty("--reveal-delay", `${Math.min(index, 7) * 70}ms`);
+        revealItems.add(element);
+      });
+    });
+  });
+
+  revealItems.forEach((element) => element.setAttribute("data-reveal", ""));
+  document.documentElement.classList.add("motion-ready");
+
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -7%" }
+  );
+
+  requestAnimationFrame(() => {
+    revealItems.forEach((element) => revealObserver.observe(element));
+  });
+
+  const heroMedia = document.querySelector(".page-hero-media");
+  const homeHeroImages = document.querySelectorAll(".hero-bg-slide img");
+  if (!heroMedia && !homeHeroImages.length) return;
+
+  let frameRequested = false;
+  const updateHeroMedia = () => {
+    const offset = Math.min(window.scrollY * 0.085, 54);
+    if (heroMedia) heroMedia.style.setProperty("--hero-parallax", `${offset}px`);
+    homeHeroImages.forEach((image) => {
+      image.style.setProperty("--hero-parallax", `${offset}px`);
+    });
+    frameRequested = false;
+  };
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (frameRequested) return;
+      frameRequested = true;
+      requestAnimationFrame(updateHeroMedia);
+    },
+    { passive: true }
+  );
+}
+
 ensureLanguageSwitcher();
 applyLanguage(getSavedLanguage());
+setupSiteMotion();

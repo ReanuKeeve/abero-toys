@@ -8,10 +8,11 @@
       name="description"
       content="Explore ABERO's toy factory profile, showroom, production capacity, quality standards, and OEM/ODM manufacturing services."
     />
-    <link rel="stylesheet" href="styles/pages/manufacturing.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/pages/manufacturing.css" />
     <script src="js/translations.js" defer></script>
+    <script src="js/translations-es.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
   <body class="interior-page">
@@ -57,11 +58,10 @@
         </div>
       </section>
 
-      <section class="content-section light-section" id="profile">
+      <section class="content-section factory-profile-section" id="profile">
         <div class="container">
           <div class="section-heading">
             <div>
-              <div class="section-pill"><span></span>Factory Profile</div>
               <h2>Stable production, ready for international projects</h2>
             </div>
             <p>
@@ -69,29 +69,115 @@
               international retailers, licensed brands, and global markets.
             </p>
           </div>
-          <div class="factory-profile-grid">
-            <article><span>Year established</span><strong>1996</strong></article>
-            <article><span>Location</span><strong>Shantou, China</strong></article>
-            <article><span>Factory area</span><strong>80,000 m²</strong></article>
-            <article><span>Employees</span><strong>500+</strong></article>
-            <article><span>Active products</span><strong>450 SKUs</strong></article>
-            <article>
-              <span>Production capacity</span><strong>6 lines · up to 8,000 units daily</strong>
-            </article>
-            <article class="profile-wide">
-              <span>OEM / ODM</span
-              ><strong
-                >Comprehensive manufacturing services with extensive ODM experience for
-                international retailers and licensed brands</strong
-              >
-            </article>
-            <article class="profile-wide">
-              <span>Global reach</span
-              ><strong>Europe · South America · Southeast Asia · Middle East · Africa</strong>
-            </article>
-            <article class="profile-wide">
-              <span>Quality standards</span><strong>ISO 9001 · BSCI · SEDEX · CCC</strong>
-            </article>
+          <div class="factory-profile-board">
+            <figure class="factory-profile-visual">
+              <img src="assets/images/office/facroty-werehouse.webp" alt="ABERO Shantou production base" />
+              <figcaption>
+                <span>Shantou production base</span>
+                <strong>Operating since 1996</strong>
+                <small>80,000 m² manufacturing facility</small>
+              </figcaption>
+            </figure>
+
+            <div class="factory-profile-grid">
+              <article class="profile-stat">
+                <span>Employees</span><strong>500+</strong><small>Production and support team</small>
+              </article>
+              <article class="profile-stat">
+                <span>Active products</span><strong>450+</strong><small>Active SKUs</small>
+              </article>
+              <article class="profile-stat">
+                <span>Production capacity</span><strong>6 Lines</strong><small> up to 8,000 units daily</small>
+              </article>
+              <article class="profile-detail profile-full">
+                <span>OEM / ODM</span>
+                <strong>Comprehensive manufacturing services with extensive ODM experience for international retailers and licensed brands</strong>
+              </article>
+              <article class="profile-detail profile-wide">
+                <span>Global reach</span>
+                <strong>Europe · South America · Southeast Asia · Middle East · Africa</strong>
+              </article>
+              <article class="profile-detail profile-wide profile-standards">
+                <span>Quality standards</span><strong>ISO 9001 · BSCI · SEDEX · CCC</strong>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section manufacturing-workflow-section" id="workflow">
+        <div class="container">
+          <div class="section-heading manufacturing-workflow-heading">
+            <div>
+              <h2>Six controlled stages from brief to shipment</h2>
+            </div>
+            <p>
+              Every stage closes with a clear deliverable or approval, keeping cost, timing,
+              product quality, and export requirements aligned.
+            </p>
+          </div>
+
+          <ol class="manufacturing-workflow" aria-label="ABERO manufacturing workflow">
+            <li class="workflow-stage">
+              <div class="workflow-marker" aria-hidden="true"><span>01</span></div>
+              <article>
+                <h3>Project brief</h3>
+                <p>Target market, function, price, quantity, packaging, timing, and compliance.</p>
+                <small>Approval · Commercial brief</small>
+              </article>
+            </li>
+            <li class="workflow-stage">
+              <div class="workflow-marker" aria-hidden="true"><span>02</span></div>
+              <article>
+                <h3>Engineering review</h3>
+                <p>Materials, construction, process, cost, factory route, and feasibility.</p>
+                <small>Approval · Technical route</small>
+              </article>
+            </li>
+            <li class="workflow-stage">
+              <div class="workflow-marker" aria-hidden="true"><span>03</span></div>
+              <article>
+                <h3>Tooling &amp; sampling</h3>
+                <p>Tool development, prototype testing, refinement, and client confirmation.</p>
+                <small>Approval · Golden sample</small>
+              </article>
+            </li>
+            <li class="workflow-stage">
+              <div class="workflow-marker" aria-hidden="true"><span>04</span></div>
+              <article>
+                <h3>Production</h3>
+                <p>Material preparation, molding, decoration, assembly, and packing.</p>
+                <small>Control · Schedule &amp; specification</small>
+              </article>
+            </li>
+            <li class="workflow-stage">
+              <div class="workflow-marker" aria-hidden="true"><span>05</span></div>
+              <article>
+                <h3>Quality release</h3>
+                <p>Pre-production, in-line, and pre-shipment inspection checkpoints.</p>
+                <small>Approval · Inspection result</small>
+              </article>
+            </li>
+            <li class="workflow-stage">
+              <div class="workflow-marker" aria-hidden="true"><span>06</span></div>
+              <article>
+                <h3>Export preparation</h3>
+                <p>Final cartons, documents, consolidation, loading, and shipment coordination.</p>
+                <small>Outcome · Export-ready order</small>
+              </article>
+            </li>
+          </ol>
+
+          <div class="manufacturing-quality-gates">
+            <div class="quality-gate-lead">
+              <span>3-stage quality control</span>
+              <strong>Checks follow the order, not just the final carton.</strong>
+            </div>
+            <ol>
+              <li><span>01</span><strong>Pre-production</strong><small>Materials and approved sample</small></li>
+              <li><span>02</span><strong>In-line</strong><small>Process, assembly, and consistency</small></li>
+              <li><span>03</span><strong>Pre-shipment</strong><small>Quantity, packing, and release</small></li>
+            </ol>
           </div>
         </div>
       </section>
@@ -100,8 +186,7 @@
         <div class="container">
           <div class="section-heading">
             <div>
-              <div class="section-pill"><span></span>Showroom</div>
-              <h2>Extensive product selection and presentation</h2>
+              <h2>A showroom built for range selection</h2>
             </div>
             <p>
               Our showroom helps buyers review products, compare categories, build ranges, and
@@ -132,7 +217,6 @@
         <div class="container">
           <div class="section-heading">
             <div>
-              <div class="section-pill"><span></span>Production</div>
               <h2>Production and quality control in operation</h2>
             </div>
             <p>
@@ -163,7 +247,6 @@
       <section class="page-cta">
         <div class="container page-cta-inner">
           <div>
-            <p class="cta-kicker">Have a product in mind?</p>
             <h2>Send the specification, target quantity, and market</h2>
           </div>
           <a href="contact.html#inquiry" class="btn btn-primary"

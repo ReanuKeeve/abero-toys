@@ -8,6 +8,11 @@
   font-size: 1.5rem;
 }
 
+.language-spanish .hero-copy-block h1 {
+  max-width: 930px;
+  font-size: clamp(3rem, 5.65vw, 5.75rem);
+}
+
 .hero-fsbig {
   position: relative;
   min-height: max(calc(100vh - var(--header-height)), 900px);
@@ -383,14 +388,6 @@
   background: var(--white);
   text-align: center;
   box-shadow: 0 18px 44px rgba(9, 24, 46, 0.1);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.capability-card:hover .capability-panel {
-  transform: translateY(-5px);
-  box-shadow: 0 24px 54px rgba(9, 24, 46, 0.14);
 }
 
 .capability-icon {
@@ -451,16 +448,6 @@
   .capability-panel {
     min-height: auto;
     padding: 38px 26px 32px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .capability-panel {
-    transition: none;
-  }
-
-  .capability-card:hover .capability-panel {
-    transform: none;
   }
 }
 
@@ -583,7 +570,7 @@
 
 .manufacturing-flow {
   position: relative;
-  min-height: 360px;
+  min-height: 235px;
   margin-top: 54px;
 }
 
@@ -591,7 +578,7 @@
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 360px;
+  height: 70px;
   overflow: visible;
 }
 
@@ -603,17 +590,10 @@
   vector-effect: non-scaling-stroke;
 }
 
-.manufacturing-flow-points circle {
-  fill: var(--light-bg);
-  stroke: var(--blue);
-  stroke-width: 2;
-  vector-effect: non-scaling-stroke;
-}
-
 .manufacturing-steps {
   position: relative;
   z-index: 1;
-  min-height: 360px;
+  min-height: 235px;
   margin: 0;
   padding: 0;
   display: grid;
@@ -629,16 +609,13 @@
   text-align: center;
 }
 
-.manufacturing-step:nth-child(even) {
-  padding-top: 226px;
-}
-
 .manufacturing-step-mark {
-  min-height: 56px;
+  position: relative;
+  width: 100%;
+  min-height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 13px;
 }
 
 .manufacturing-step-number {
@@ -648,6 +625,7 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
+  border: 5px solid var(--light-bg);
   background: var(--navy);
   color: var(--white);
   font-size: 1.2rem;
@@ -658,17 +636,21 @@
 
 .manufacturing-step-icon {
   flex: 0 0 auto;
-  width: 52px;
-  height: 52px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 38px);
+  width: 46px;
+  height: 46px;
+  transform: translateY(-50%);
   fill: none;
   stroke: var(--navy);
-  stroke-width: 2;
+  stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .manufacturing-step h3 {
-  margin: 14px 0 6px;
+  margin: 16px 0 6px;
   color: var(--navy);
   font-size: 1.04rem;
 }
@@ -703,7 +685,6 @@
   height: 230px;
   display: block;
   object-fit: cover;
-  transition: transform 0.35s ease;
 }
 
 .manufacturing-evidence-item figcaption {
@@ -719,31 +700,25 @@
   text-transform: uppercase;
 }
 
-.manufacturing-evidence-item:hover img {
-  transform: scale(1.025);
-}
-
 @media (max-width: 1100px) {
   .manufacturing-flow,
   .manufacturing-steps {
-    min-height: 330px;
+    min-height: 230px;
   }
 
   .manufacturing-flow-line {
-    height: 330px;
-  }
-
-  .manufacturing-step:nth-child(even) {
-    padding-top: 208px;
+    height: 70px;
   }
 
   .manufacturing-step-number {
     width: 48px;
     height: 48px;
+    border-width: 4px;
     font-size: 1.05rem;
   }
 
   .manufacturing-step-icon {
+    left: calc(50% + 34px);
     width: 45px;
     height: 45px;
   }
@@ -785,7 +760,7 @@
     left: 26px;
     width: 3px;
     border-radius: 999px;
-    background: linear-gradient(180deg, var(--navy), #7842dc 38%, var(--blue) 70%, #04abc9);
+    background: linear-gradient(180deg, var(--navy), var(--blue) 62%, #04abc9);
   }
 
   .manufacturing-step,
@@ -802,6 +777,8 @@
   }
 
   .manufacturing-step-mark {
+    position: static;
+    width: auto;
     min-height: 48px;
     justify-content: flex-start;
   }
@@ -812,11 +789,14 @@
     left: 0;
     width: 54px;
     height: 54px;
+    border: 0;
   }
 
   .manufacturing-step-icon {
+    position: static;
     width: 46px;
     height: 46px;
+    transform: none;
   }
 
   .manufacturing-step h3 {
@@ -850,16 +830,6 @@
 
   .manufacturing-evidence-item img {
     height: 220px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .manufacturing-evidence-item img {
-    transition: none;
-  }
-
-  .manufacturing-evidence-item:hover img {
-    transform: none;
   }
 }
 
@@ -928,10 +898,6 @@
   transition:
     opacity 0.2s ease,
     transform 0.2s ease;
-}
-
-.video-play:hover {
-  transform: translate(-50%, -50%) scale(1.06);
 }
 
 .video-caption {
@@ -1155,14 +1121,6 @@
   border-radius: 18px;
   background: var(--white);
   box-shadow: var(--shadow-card);
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.news-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 50px rgba(9, 24, 46, 0.12);
 }
 
 .news-card img {

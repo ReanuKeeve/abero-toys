@@ -1,25 +1,24 @@
 (() => {
   const common = {
     "About Us": "О компании",
-    Manufacturing: "Производство",
-    Sourcing: "Сорсинг",
-    News: "Новости",
-    Contact: "Контакты",
+    "Manufacturing": "Производство",
+    "Sourcing": "Сорсинг",
+    "News": "Новости",
+    "Contact": "Контакты",
     "Canton Fair": "Кантонская ярмарка",
-    Yiwu: "Иу",
-    Shenzhen: "Шэньчжэнь",
-    Ningbo: "Нинбо",
+    "Yiwu": "Иу",
+    "Shenzhen": "Шэньчжэнь",
+    "Ningbo": "Нинбо",
     "Send Inquiry": "Отправить запрос",
     "Send an inquiry": "Отправить запрос",
     "Send project details": "Отправить данные проекта",
-    Company: "Компания",
-    Services: "Услуги",
+    "Company": "Компания",
+    "Services": "Услуги",
     "China Sourcing": "Сорсинг в Китае",
     "Factory Coordination": "Координация фабрик",
     "Quality Control": "Контроль качества",
     "Export Support": "Экспортное сопровождение",
-    "Toy manufacturing and sourcing partner based in Shantou, China.":
-      "Партнёр по производству и поиску игрушек в Шаньтоу, Китай.",
+    "Toy manufacturing and sourcing partner based in Shantou, China.": "Партнёр по производству и поиску игрушек в Шаньтоу, Китай.",
     "Shantou, Guangdong, China": "Шаньтоу, Гуандун, Китай",
     "OEM / ODM · Sourcing · Export": "OEM / ODM · Сорсинг · Экспорт",
     "© 2026 ABERO. All rights reserved.": "© 2026 ABERO. Все права защищены.",
@@ -28,9 +27,10 @@
     "Open menu": "Открыть меню",
     "Close menu": "Закрыть меню",
     "Primary navigation": "Основная навигация",
-    Language: "Язык",
+    "Language": "Язык",
     "Switch to English": "Переключить на английский",
     "Switch to Russian": "Переключить на русский",
+    "Switch to Spanish": "Переключить на испанский",
     "Previous slide": "Предыдущий слайд",
     "Next slide": "Следующий слайд",
     "Previous image": "Предыдущее изображение",
@@ -46,104 +46,72 @@
     "Slide 2": "Слайд 2",
     "Slide 3": "Слайд 3",
     "Slide 4": "Слайд 4",
-    "Form layout complete — connect ABERO’s email inbox or CRM to receive submissions.":
-      "Макет формы готов — подключите почту ABERO или CRM, чтобы получать заявки.",
+    "Form layout complete — connect ABERO’s email inbox or CRM to receive submissions.": "Макет формы готов — подключите почту ABERO или CRM, чтобы получать заявки."
   };
 
   const home = {
-    "One partner": "Один партнёр",
-    "From product idea": "От идеи продукта",
-    "To international delivery.": "До международной доставки.",
-    "Our Operating Model": "Наша модель работы",
-    "One partner from product idea to international delivery.":
-      "Один партнёр — от идеи продукта до международной доставки.",
-    "OEM / ODM": "OEM / ODM",
-    "Product Development": "Разработка продукта",
-    "Factory Network": "Сеть фабрик",
-    GLOBAL: "GLOBAL",
-    "3-STAGE": "3 ЭТАПА",
     "ABERO — Toy Manufacturing & Sourcing Partner": "ABERO — производство и сорсинг игрушек",
-    "ABERO is a China-based toy manufacturing, OEM/ODM, and sourcing partner for international brands, importers, distributors, and private label businesses.":
-      "ABERO — китайский партнёр по производству игрушек, OEM/ODM и сорсингу для международных брендов, импортёров, дистрибьюторов и компаний с собственными торговыми марками.",
+    "ABERO is a China-based toy manufacturing, OEM/ODM, and sourcing partner for international brands, importers, distributors, and private label businesses.": "ABERO — китайский партнёр по производству игрушек, OEM/ODM и сорсингу для международных брендов, импортёров, дистрибьюторов и компаний с собственными торговыми марками.",
     "OEM · ODM · Sourcing": "OEM · ODM · Сорсинг",
     "Toy Manufacturing & Sourcing Partner": "Партнёр по производству и сорсингу игрушек",
     "SHANTOU · CHINA · WORLD": "ШАНЬТОУ · КИТАЙ · ВЕСЬ МИР",
-    "OEM / ODM toy solutions and China sourcing support for international brands, importers, distributors, and private label businesses.":
-      "OEM/ODM-решения и сорсинг игрушек в Китае для международных брендов, импортёров, дистрибьюторов и компаний с собственными торговыми марками.",
+    "OEM / ODM toy solutions and China sourcing support for international brands, importers, distributors, and private label businesses.": "OEM/ODM-решения и сорсинг игрушек в Китае для международных брендов, импортёров, дистрибьюторов и компаний с собственными торговыми марками.",
     "View Capabilities": "Наши возможности",
     "Headquarters · Shantou, China": "Штаб-квартира · Шаньтоу, Китай",
-    Factories: "Фабрик",
+    "Factories": "Фабрик",
     "Years Export": "Лет в экспорте",
-    Worldwide: "По всему миру",
-    Markets: "Рынки",
+    "Worldwide": "По всему миру",
+    "Markets": "Рынки",
     "OEM / ODM Support": "Поддержка OEM / ODM",
-    "Custom development, tooling, and private label production for international brands.":
-      "Разработка продукции, изготовление оснастки и выпуск под собственной маркой для международных брендов.",
+    "Custom development, tooling, and private label production for international brands.": "Разработка продукции, изготовление оснастки и выпуск под собственной маркой для международных брендов.",
     "1000+ Factories": "Более 1000 фабрик",
-    "Curated supplier network across toy categories, plastics, plush, and accessories.":
-      "Отобранная сеть поставщиков игрушек, изделий из пластика, плюшевой продукции и аксессуаров.",
+    "Curated supplier network across toy categories, plastics, plush, and accessories.": "Отобранная сеть поставщиков игрушек, изделий из пластика, плюшевой продукции и аксессуаров.",
     "Export Support": "Экспортное сопровождение",
-    "Documentation, packaging, inspection, and shipment coordination for global markets.":
-      "Документация, упаковка, инспекция и координация отгрузок для мировых рынков.",
-    "Pre-production, in-line, and pre-shipment inspection support before container loading.":
-      "Контроль до производства, во время выпуска и перед отгрузкой до загрузки контейнера.",
+    "Documentation, packaging, inspection, and shipment coordination for global markets.": "Документация, упаковка, инспекция и координация отгрузок для мировых рынков.",
+    "Pre-production, in-line, and pre-shipment inspection support before container loading.": "Контроль до производства, во время выпуска и перед отгрузкой до загрузки контейнера.",
     "About Abero": "О компании ABERO",
-    "Manufacturing expertise with sourcing power.":
-      "Производственный опыт и широкие возможности сорсинга.",
-    "Founded in Shantou, China, ABERO combines selected manufacturing capabilities with an extensive supplier network to provide complete toy solutions for importers, distributors, retail chains, e-commerce sellers, and private label brands.":
-      "Компания ABERO, основанная в Шаньтоу, объединяет собственные производственные возможности с широкой сетью поставщиков и предлагает комплексные решения для импортёров, дистрибьюторов, торговых сетей, продавцов электронной коммерции и частных марок.",
+    "Manufacturing expertise with sourcing power.": "Производственный опыт и широкие возможности сорсинга.",
+    "Founded in Shantou, China, ABERO combines selected manufacturing capabilities with an extensive supplier network to provide complete toy solutions for importers, distributors, retail chains, e-commerce sellers, and private label brands.": "Компания ABERO, основанная в Шаньтоу, объединяет собственные производственные возможности с широкой сетью поставщиков и предлагает комплексные решения для импортёров, дистрибьюторов, торговых сетей, продавцов электронной коммерции и частных марок.",
     "Showroom and product selection support": "Шоурум и помощь в подборе продукции",
     "Factory coordination and sample management": "Координация фабрик и работа с образцами",
     "Quality control before shipment": "Контроль качества перед отгрузкой",
     "OEM/ODM and private label support": "Поддержка OEM/ODM и собственных торговых марок",
     "Learn about us": "Подробнее о компании",
     "Office Entrance": "Вход в офис",
-    Showroom: "Шоурум",
-    Warehouse: "Склад",
+    "Showroom": "Шоурум",
+    "Warehouse": "Склад",
     "Manufacturing · OEM · ODM": "Производство · OEM · ODM",
     "From idea to shipment.": "От идеи до отгрузки.",
-    "We support brands through design, tooling, sampling, production, inspection, packaging, and shipping.":
-      "Мы сопровождаем бренды на этапах проектирования, изготовления оснастки и образцов, производства, инспекции, упаковки и отгрузки.",
+    "We support brands through design, tooling, sampling, production, inspection, packaging, and shipping.": "Мы сопровождаем бренды на этапах проектирования, изготовления оснастки и образцов, производства, инспекции, упаковки и отгрузки.",
     "Injection Molding": "Литьё под давлением",
-    "Selected production capabilities for key toy categories and plastic components.":
-      "Отобранные производственные мощности для основных категорий игрушек и пластиковых компонентов.",
-    Assembly: "Сборка",
-    "Process coordination for product assembly, packaging, and shipment readiness.":
-      "Координация сборки, упаковки и подготовки продукции к отгрузке.",
-    "Inspection support before production release and before final container loading.":
-      "Инспекция перед запуском производства и перед окончательной загрузкой контейнера.",
-    Packaging: "Упаковка",
-    "Private label packaging, carton planning, and export-ready presentation.":
-      "Упаковка под собственной маркой, планирование коробов и подготовка продукции к экспорту.",
-    Design: "Дизайн",
-    Tooling: "Оснастка",
-    Sampling: "Образцы",
-    Production: "Производство",
-    Shipping: "Отгрузка",
+    "Selected production capabilities for key toy categories and plastic components.": "Отобранные производственные мощности для основных категорий игрушек и пластиковых компонентов.",
+    "Assembly": "Сборка",
+    "Process coordination for product assembly, packaging, and shipment readiness.": "Координация сборки, упаковки и подготовки продукции к отгрузке.",
+    "Inspection support before production release and before final container loading.": "Инспекция перед запуском производства и перед окончательной загрузкой контейнера.",
+    "Packaging": "Упаковка",
+    "Private label packaging, carton planning, and export-ready presentation.": "Упаковка под собственной маркой, планирование коробов и подготовка продукции к экспорту.",
+    "Design": "Дизайн",
+    "Tooling": "Оснастка",
+    "Sampling": "Образцы",
+    "Production": "Производство",
+    "Shipping": "Отгрузка",
     "Inside ABERO": "Внутри ABERO",
     "A closer look at how we work.": "Посмотрите, как мы работаем.",
-    "Visit our Shantou office, showroom, production floor, warehouse, and quality-control operation in a one-minute tour.":
-      "За одну минуту посетите наш офис, шоурум, производство, склад и отдел контроля качества в Шаньтоу.",
+    "Visit our Shantou office, showroom, production floor, warehouse, and quality-control operation in a one-minute tour.": "За одну минуту посетите наш офис, шоурум, производство, склад и отдел контроля качества в Шаньтоу.",
     "Play factory tour video": "Воспроизвести видеоэкскурсию по фабрике",
     "ABERO · SHANTOU": "ABERO · ШАНЬТОУ",
-    "Office, showroom, production, and quality control.":
-      "Офис, шоурум, производство и контроль качества.",
+    "Office, showroom, production, and quality control.": "Офис, шоурум, производство и контроль качества.",
     "Sourcing Services": "Услуги сорсинга",
     "Your sourcing partner.": "Ваш партнёр по сорсингу.",
-    "ABERO helps clients source products throughout China by connecting product demand with suitable factories, practical quality control, and export-ready logistics.":
-      "ABERO помогает клиентам находить продукцию по всему Китаю, подбирая подходящие фабрики, организуя контроль качества и экспортную логистику.",
+    "ABERO helps clients source products throughout China by connecting product demand with suitable factories, practical quality control, and export-ready logistics.": "ABERO помогает клиентам находить продукцию по всему Китаю, подбирая подходящие фабрики, организуя контроль качества и экспортную логистику.",
     "1000+ factories in our network": "Более 1000 фабрик в нашей сети",
     "Supplier Search": "Поиск поставщиков",
-    "Find suitable factories based on category, MOQ, compliance, and target price.":
-      "Подбор фабрик по категории, минимальному объёму заказа, требованиям и целевой цене.",
+    "Find suitable factories based on category, MOQ, compliance, and target price.": "Подбор фабрик по категории, минимальному объёму заказа, требованиям и целевой цене.",
     "Order Follow-up": "Сопровождение заказа",
-    "Manage samples, production updates, QC, and shipment coordination.":
-      "Работа с образцами, контроль производства и качества, координация отгрузки.",
-    "Communicate with suppliers and coordinate practical production details.":
-      "Связь с поставщиками и координация практических деталей производства.",
+    "Manage samples, production updates, QC, and shipment coordination.": "Работа с образцами, контроль производства и качества, координация отгрузки.",
+    "Communicate with suppliers and coordinate practical production details.": "Связь с поставщиками и координация практических деталей производства.",
     "Export Preparation": "Подготовка к экспорту",
-    "Support packaging, inspection, documentation, and shipping readiness.":
-      "Поддержка упаковки, инспекции, документации и подготовки к отправке.",
+    "Support packaging, inspection, documentation, and shipping readiness.": "Поддержка упаковки, инспекции, документации и подготовки к отправке.",
     "Explore sourcing services": "Подробнее об услугах сорсинга",
     "Sourcing Regions": "Регионы сорсинга",
     "Shantou / Chenghai": "Шаньтоу / Чэнхай",
@@ -153,23 +121,20 @@
     "Plastic & outdoor": "Пластиковые товары и товары для улицы",
     "Categories Covered": "Категории продукции",
     "Plastic Toys": "Пластиковые игрушки",
-    Plush: "Плюшевые игрушки",
+    "Plush": "Плюшевые игрушки",
     "Electronic Toys": "Электронные игрушки",
-    Vehicles: "Игрушечный транспорт",
-    Dolls: "Куклы",
-    Educational: "Развивающие игрушки",
-    Outdoor: "Игрушки для улицы",
-    Seasonal: "Сезонные товары",
+    "Vehicles": "Игрушечный транспорт",
+    "Dolls": "Куклы",
+    "Educational": "Развивающие игрушки",
+    "Outdoor": "Игрушки для улицы",
+    "Seasonal": "Сезонные товары",
     "Quality & Compliance Support": "Качество и соответствие требованиям",
-    "International toy safety & compliance references.":
-      "Международные стандарты безопасности игрушек.",
-    "We support international toy safety and compliance requirements for export markets. Standards below are commonly referenced through partner factories and testing labs.":
-      "Мы помогаем соблюдать международные требования к безопасности игрушек на экспортных рынках. Указанные ниже стандарты обычно подтверждаются через партнёрские фабрики и испытательные лаборатории.",
-    Compliance: "Соответствие",
+    "International toy safety & compliance references.": "Международные стандарты безопасности игрушек.",
+    "We support international toy safety and compliance requirements for export markets. Standards below are commonly referenced through partner factories and testing labs.": "Мы помогаем соблюдать международные требования к безопасности игрушек на экспортных рынках. Указанные ниже стандарты обычно подтверждаются через партнёрские фабрики и испытательные лаборатории.",
+    "Compliance": "Соответствие",
     "Factory Gallery": "Галерея фабрики",
     "Photos that build trust.": "Фотографии, которые укрепляют доверие.",
-    "A look at production, warehouse, showroom, quality control, and export operations.":
-      "Производство, склад, шоурум, контроль качества и экспортные операции.",
+    "A look at production, warehouse, showroom, quality control, and export operations.": "Производство, склад, шоурум, контроль качества и экспортные операции.",
     "Quality Check": "Проверка качества",
     "Production & Packing": "Производство и упаковка",
     "Awards & Recognition": "Награды и признание",
@@ -177,25 +142,19 @@
     "Toy fairs on the buyer calendar.": "Выставки игрушек в календаре закупщиков.",
     "Hong Kong Fair": "Выставка в Гонконге",
     "Hong Kong Toys & Games Fair": "Гонконгская выставка игрушек и игр",
-    "International toy industry event for buyers, brands, and manufacturers.":
-      "Международное мероприятие индустрии игрушек для закупщиков, брендов и производителей.",
+    "International toy industry event for buyers, brands, and manufacturers.": "Международное мероприятие индустрии игрушек для закупщиков, брендов и производителей.",
     "View Event Note": "Подробнее о событии",
-    "Trade fair connecting Chinese manufacturers with global buyers.":
-      "Торговая выставка, объединяющая китайских производителей и международных закупщиков.",
+    "Trade fair connecting Chinese manufacturers with global buyers.": "Торговая выставка, объединяющая китайских производителей и международных закупщиков.",
     "Nuremberg Fair": "Выставка в Нюрнберге",
     "Nuremberg Toy Fair": "Нюрнбергская выставка игрушек",
-    "International toy market event focused on sourcing and product trends.":
-      "Международная выставка, посвящённая сорсингу и тенденциям рынка игрушек.",
+    "International toy market event focused on sourcing and product trends.": "Международная выставка, посвящённая сорсингу и тенденциям рынка игрушек.",
     "Contact Us": "Связаться с нами",
-    "Start your manufacturing or sourcing project.":
-      "Начните свой проект по производству или сорсингу.",
-    "Send us your product idea, target price, required quantity, market, and compliance requirements. Our team in Shantou, China will help evaluate the best production or sourcing solution.":
-      "Отправьте нам идею продукта, целевую цену, необходимое количество, рынок и требования к соответствию. Наша команда в Шаньтоу поможет подобрать оптимальное решение для производства или сорсинга.",
+    "Start your manufacturing or sourcing project.": "Начните свой проект по производству или сорсингу.",
+    "Send us your product idea, target price, required quantity, market, and compliance requirements. Our team in Shantou, China will help evaluate the best production or sourcing solution.": "Отправьте нам идею продукта, целевую цену, необходимое количество, рынок и требования к соответствию. Наша команда в Шаньтоу поможет подобрать оптимальное решение для производства или сорсинга.",
     "Request WhatsApp reply": "Запросить ответ в WhatsApp",
     "Request WeChat contact": "Связаться через WeChat",
     "Or visit contact page →": "Или перейдите на страницу контактов →",
-    "Share your project details. Our team will reply with the best production or sourcing path.":
-      "Расскажите о проекте, и наша команда предложит оптимальный вариант производства или сорсинга.",
+    "Share your project details. Our team will reply with the best production or sourcing path.": "Расскажите о проекте, и наша команда предложит оптимальный вариант производства или сорсинга.",
     "Name *": "Имя *",
     "Email *": "Эл. почта *",
     "Project Details *": "Описание проекта *",
@@ -203,20 +162,15 @@
     "Exhibition description will appear here.": "Здесь появится описание выставки.",
     "Close modal": "Закрыть окно",
     "ABERO event update": "Новости о событии ABERO",
-    "Event details will be confirmed here.":
-      "Здесь будет размещена подтверждённая информация о событии.",
+    "Event details will be confirmed here.": "Здесь будет размещена подтверждённая информация о событии."
   };
 
   const about = {
-    "About ABERO — Toy Manufacturing & Sourcing":
-      "О компании ABERO — производство и сорсинг игрушек",
-    "Learn about ABERO's Shantou team, facilities, showroom, supplier network, and approach to international toy manufacturing and sourcing.":
-      "Узнайте о команде ABERO в Шаньтоу, производственных площадках, шоуруме, сети поставщиков и подходе к международному производству и сорсингу игрушек.",
+    "About ABERO — Toy Manufacturing & Sourcing": "О компании ABERO — производство и сорсинг игрушек",
+    "Learn about ABERO's Shantou team, facilities, showroom, supplier network, and approach to international toy manufacturing and sourcing.": "Узнайте о команде ABERO в Шаньтоу, производственных площадках, шоуруме, сети поставщиков и подходе к международному производству и сорсингу игрушек.",
     "About ABERO": "О компании ABERO",
-    "Built in Shantou. Ready for global toy markets.":
-      "Создано в Шаньтоу. Готово для мировых рынков игрушек.",
-    "We combine hands-on manufacturing experience, a product showroom, quality control, and a broad factory network to help international buyers move from idea to shipment.":
-      "Мы объединяем практический производственный опыт, товарный шоурум, контроль качества и широкую сеть фабрик, помогая международным закупщикам пройти путь от идеи до отгрузки.",
+    "Built in Shantou. Ready for global toy markets.": "Создано в Шаньтоу. Готово для мировых рынков игрушек.",
+    "We combine hands-on manufacturing experience, a product showroom, quality control, and a broad factory network to help international buyers move from idea to shipment.": "Мы объединяем практический производственный опыт, товарный шоурум, контроль качества и широкую сеть фабрик, помогая международным закупщикам пройти путь от идеи до отгрузки.",
     "Meet ABERO": "Познакомиться с ABERO",
     "Discuss a project": "Обсудить проект",
     "Years of export experience": "Лет экспортного опыта",
@@ -225,59 +179,45 @@
     "Buyer and market support": "Поддержка закупщиков и рынков",
     "ABERO highlights": "Ключевые факты об ABERO",
     "Our Company": "Наша компания",
-    "One team connecting products, production, and export.":
-      "Одна команда объединяет продукт, производство и экспорт.",
-    "ABERO is based in Shantou, one of China’s major toy-industry centers. Our role is to simplify the work between an international buyer and the people who develop, manufacture, inspect, pack, and prepare a toy for export.":
-      "ABERO находится в Шаньтоу — одном из крупнейших центров игрушечной промышленности Китая. Наша задача — упростить взаимодействие международного закупщика со специалистами, которые разрабатывают, производят, проверяют, упаковывают и готовят игрушки к экспорту.",
-    "Clients can use ABERO for a focused production requirement or for a broader sourcing program. We coordinate samples, supplier communication, product revisions, packaging, quality checks, and shipment readiness around the brief.":
-      "Клиенты могут обратиться в ABERO как с конкретной производственной задачей, так и с комплексной программой сорсинга. Мы координируем образцы, общение с поставщиками, доработку продукта, упаковку, контроль качества и подготовку к отгрузке в соответствии с техническим заданием.",
+    "One team connecting products, production, and export.": "Одна команда объединяет продукт, производство и экспорт.",
+    "ABERO is based in Shantou, one of China’s major toy-industry centers. Our role is to simplify the work between an international buyer and the people who develop, manufacture, inspect, pack, and prepare a toy for export.": "ABERO находится в Шаньтоу — одном из крупнейших центров игрушечной промышленности Китая. Наша задача — упростить взаимодействие международного закупщика со специалистами, которые разрабатывают, производят, проверяют, упаковывают и готовят игрушки к экспорту.",
+    "Clients can use ABERO for a focused production requirement or for a broader sourcing program. We coordinate samples, supplier communication, product revisions, packaging, quality checks, and shipment readiness around the brief.": "Клиенты могут обратиться в ABERO как с конкретной производственной задачей, так и с комплексной программой сорсинга. Мы координируем образцы, общение с поставщиками, доработку продукта, упаковку, контроль качества и подготовку к отгрузке в соответствии с техническим заданием.",
     "Product and supplier matching": "Подбор продукции и поставщиков",
     "OEM/ODM development coordination": "Координация разработки OEM/ODM",
     "Production follow-up and inspection": "Сопровождение производства и инспекция",
     "Packaging and export preparation": "Упаковка и подготовка к экспорту",
-    "Shantou office · Client meetings and project coordination":
-      "Офис в Шаньтоу · Встречи с клиентами и координация проектов",
+    "Shantou office · Client meetings and project coordination": "Офис в Шаньтоу · Встречи с клиентами и координация проектов",
     "How We Work": "Как мы работаем",
     "Practical support at every handoff.": "Практическая поддержка на каждом этапе.",
-    "Clear project ownership helps keep specifications, samples, production, inspection, and delivery moving in the same direction.":
-      "Единая ответственность за проект помогает согласованно вести спецификации, образцы, производство, инспекцию и доставку.",
+    "Clear project ownership helps keep specifications, samples, production, inspection, and delivery moving in the same direction.": "Единая ответственность за проект помогает согласованно вести спецификации, образцы, производство, инспекцию и доставку.",
     "Understand the brief": "Понять задачу",
-    "Market, target price, quantity, packaging, timing, and compliance requirements.":
-      "Рынок, целевая цена, количество, упаковка, сроки и требования к соответствию.",
+    "Market, target price, quantity, packaging, timing, and compliance requirements.": "Рынок, целевая цена, количество, упаковка, сроки и требования к соответствию.",
     "Select the route": "Выбрать подход",
-    "Choose OEM/ODM development, direct manufacturing, or coordinated sourcing.":
-      "Выбрать разработку OEM/ODM, прямое производство или координированный сорсинг.",
+    "Choose OEM/ODM development, direct manufacturing, or coordinated sourcing.": "Выбрать разработку OEM/ODM, прямое производство или координированный сорсинг.",
     "Control the details": "Контролировать детали",
-    "Samples, specifications, production updates, packaging, and inspections.":
-      "Образцы, спецификации, обновления производства, упаковка и инспекции.",
+    "Samples, specifications, production updates, packaging, and inspections.": "Образцы, спецификации, обновления производства, упаковка и инспекции.",
     "Prepare for export": "Подготовить к экспорту",
-    "Final checks, carton planning, documentation, and shipment coordination.":
-      "Финальные проверки, планирование коробов, документация и координация отгрузки.",
+    "Final checks, carton planning, documentation, and shipment coordination.": "Финальные проверки, планирование коробов, документация и координация отгрузки.",
     "Our Facilities": "Наши объекты",
     "A working environment buyers can see.": "Рабочая среда, которую могут увидеть закупщики.",
-    "These existing asset photos are being used throughout the site as representative placeholders for the final facility gallery.":
-      "Эти фотографии используются на сайте как временные примеры для будущей галереи объектов.",
+    "These existing asset photos are being used throughout the site as representative placeholders for the final facility gallery.": "Эти фотографии используются на сайте как временные примеры для будущей галереи объектов.",
     "Product showroom": "Товарный шоурум",
-    Office: "Офис",
+    "Office": "Офис",
     "Buyer selection area": "Зона подбора продукции",
     "Awards and company recognition": "Награды и признание компании",
     "Quality Mindset": "Подход к качеству",
     "Trust is built through visible process.": "Доверие создаётся прозрачным процессом.",
-    "For international projects, consistency matters as much as speed. We keep decisions documented, monitor production progress, and plan inspection points before goods are approved for shipment.":
-      "В международных проектах стабильность не менее важна, чем скорость. Мы фиксируем решения, отслеживаем ход производства и заранее планируем контрольные точки до разрешения на отгрузку.",
+    "For international projects, consistency matters as much as speed. We keep decisions documented, monitor production progress, and plan inspection points before goods are approved for shipment.": "В международных проектах стабильность не менее важна, чем скорость. Мы фиксируем решения, отслеживаем ход производства и заранее планируем контрольные точки до разрешения на отгрузку.",
     "See quality workflow": "Посмотреть процесс контроля качества",
     "Start with the brief": "Начните с задачи",
-    "Tell us what you want to make or source.": "Расскажите, что вы хотите произвести или найти.",
+    "Tell us what you want to make or source.": "Расскажите, что вы хотите произвести или найти."
   };
 
   const manufacturing = {
     "Manufacturing — ABERO OEM & ODM Toy Production": "Производство — игрушки OEM и ODM от ABERO",
-    "Explore ABERO's toy manufacturing workflow, including development, tooling, molding, assembly, quality control, packaging, and export preparation.":
-      "Узнайте о производственном процессе ABERO: разработке, оснастке, литье, сборке, контроле качества, упаковке и подготовке к экспорту.",
-    "From product brief to export-ready production.":
-      "От технического задания до продукции, готовой к экспорту.",
-    "Development coordination, tooling, molding, assembly, inspection, packaging, and shipment preparation through one practical workflow.":
-      "Разработка, оснастка, литьё, сборка, инспекция, упаковка и подготовка к отправке в рамках единого практического процесса.",
+    "Explore ABERO's toy manufacturing workflow, including development, tooling, molding, assembly, quality control, packaging, and export preparation.": "Узнайте о производственном процессе ABERO: разработке, оснастке, литье, сборке, контроле качества, упаковке и подготовке к экспорту.",
+    "From product brief to export-ready production.": "От технического задания до продукции, готовой к экспорту.",
+    "Development coordination, tooling, molding, assembly, inspection, packaging, and shipment preparation through one practical workflow.": "Разработка, оснастка, литьё, сборка, инспекция, упаковка и подготовка к отправке в рамках единого практического процесса.",
     "See the process": "Посмотреть процесс",
     "Request an evaluation": "Запросить оценку",
     "Brief & feasibility": "Задача и оценка осуществимости",
@@ -286,74 +226,57 @@
     "Packing & shipment": "Упаковка и отгрузка",
     "Production Workflow": "Производственный процесс",
     "A clear path from idea to shipment.": "Понятный путь от идеи до отгрузки.",
-    "The exact route depends on the product, but every project is organized around the same decision points and approval gates.":
-      "Конкретный процесс зависит от продукта, но каждый проект строится вокруг одинаковых этапов принятия решений и согласования.",
+    "The exact route depends on the product, but every project is organized around the same decision points and approval gates.": "Конкретный процесс зависит от продукта, но каждый проект строится вокруг одинаковых этапов принятия решений и согласования.",
     "Product brief": "Техническое задание",
-    "Target market, specifications, price, quantity, packaging, and delivery expectations.":
-      "Целевой рынок, характеристики, цена, количество, упаковка и ожидаемые сроки поставки.",
-    Feasibility: "Оценка осуществимости",
-    "Material, process, factory, tooling, MOQ, compliance, and cost review.":
-      "Проверка материалов, процесса, фабрики, оснастки, минимального заказа, соответствия требованиям и стоимости.",
+    "Target market, specifications, price, quantity, packaging, and delivery expectations.": "Целевой рынок, характеристики, цена, количество, упаковка и ожидаемые сроки поставки.",
+    "Feasibility": "Оценка осуществимости",
+    "Material, process, factory, tooling, MOQ, compliance, and cost review.": "Проверка материалов, процесса, фабрики, оснастки, минимального заказа, соответствия требованиям и стоимости.",
     "Sample approval": "Согласование образца",
-    "Prototype or pre-production sample review before volume production.":
-      "Проверка прототипа или предсерийного образца до запуска массового производства.",
-    "Material preparation, molding, decoration, assembly, and packing.":
-      "Подготовка материалов, литьё, декорирование, сборка и упаковка.",
+    "Prototype or pre-production sample review before volume production.": "Проверка прототипа или предсерийного образца до запуска массового производства.",
+    "Material preparation, molding, decoration, assembly, and packing.": "Подготовка материалов, литьё, декорирование, сборка и упаковка.",
     "Quality control": "Контроль качества",
-    "Inspection checkpoints against the approved sample and specification.":
-      "Контрольные проверки по утверждённому образцу и спецификации.",
+    "Inspection checkpoints against the approved sample and specification.": "Контрольные проверки по утверждённому образцу и спецификации.",
     "Export readiness": "Готовность к экспорту",
-    "Final cartons, documentation, consolidation, and shipment coordination.":
-      "Финальные короба, документация, консолидация и координация отгрузки.",
+    "Final cartons, documentation, consolidation, and shipment coordination.": "Финальные короба, документация, консолидация и координация отгрузки.",
     "Core Capabilities": "Основные возможности",
     "Production stages, made visible.": "Все этапы производства — наглядно.",
-    "Your existing production images are used here as representative placeholders until final project-specific photography is selected.":
-      "Существующие производственные фотографии используются как временные примеры до выбора финальных снимков для проекта.",
+    "Your existing production images are used here as representative placeholders until final project-specific photography is selected.": "Существующие производственные фотографии используются как временные примеры до выбора финальных снимков для проекта.",
     "Mold and component preparation": "Подготовка пресс-форм и компонентов",
-    "Coordinate tooling requirements, product structure, component fit, and the sample approval path before mass production.":
-      "Координация требований к оснастке, конструкции изделия, совместимости компонентов и согласования образца до массового производства.",
+    "Coordinate tooling requirements, product structure, component fit, and the sample approval path before mass production.": "Координация требований к оснастке, конструкции изделия, совместимости компонентов и согласования образца до массового производства.",
     "Tooling review": "Проверка оснастки",
     "Prototype coordination": "Координация прототипа",
     "Pre-production sample": "Предсерийный образец",
-    Molding: "Литьё",
+    "Molding": "Литьё",
     "Plastic component production": "Производство пластиковых компонентов",
-    "Plan material selection, color matching, molding, and component checks around the approved specification.":
-      "Выбор материала, подбор цвета, литьё и проверка компонентов в соответствии с утверждённой спецификацией.",
+    "Plan material selection, color matching, molding, and component checks around the approved specification.": "Выбор материала, подбор цвета, литьё и проверка компонентов в соответствии с утверждённой спецификацией.",
     "Material control": "Контроль материалов",
     "Color reference": "Эталон цвета",
     "In-process checks": "Проверки в процессе производства",
     "Assembly and line coordination": "Координация сборки и производственной линии",
-    "Track assembly, decoration, functional checks, and packing progress through the production schedule.":
-      "Контроль сборки, декорирования, функциональных проверок и упаковки по производственному графику.",
+    "Track assembly, decoration, functional checks, and packing progress through the production schedule.": "Контроль сборки, декорирования, функциональных проверок и упаковки по производственному графику.",
     "Assembly follow-up": "Контроль сборки",
     "Function checks": "Функциональные проверки",
     "Line inspection": "Инспекция линии",
-    Packing: "Упаковка",
+    "Packing": "Упаковка",
     "Storage and shipment preparation": "Хранение и подготовка к отгрузке",
-    "Prepare finished goods, master cartons, shipping marks, and final inspection access before loading.":
-      "Подготовка готовой продукции, транспортных коробов, маркировки и доступа для финальной инспекции перед загрузкой.",
+    "Prepare finished goods, master cartons, shipping marks, and final inspection access before loading.": "Подготовка готовой продукции, транспортных коробов, маркировки и доступа для финальной инспекции перед загрузкой.",
     "Carton planning": "Планирование коробов",
     "Shipping marks": "Транспортная маркировка",
     "Final inventory check": "Финальная проверка количества",
     "Materials & Quality": "Материалы и качество",
     "Control starts before the assembly line.": "Контроль начинается до сборочной линии.",
-    "Product quality depends on approved materials, stable production settings, clear workmanship standards, and inspection points that are agreed before shipment.":
-      "Качество продукции зависит от утверждённых материалов, стабильных производственных параметров, понятных стандартов исполнения и контрольных точек, согласованных до отгрузки.",
+    "Product quality depends on approved materials, stable production settings, clear workmanship standards, and inspection points that are agreed before shipment.": "Качество продукции зависит от утверждённых материалов, стабильных производственных параметров, понятных стандартов исполнения и контрольных точек, согласованных до отгрузки.",
     "Pre-production": "До производства",
-    "Approved sample, materials, specifications, packaging, and inspection criteria.":
-      "Утверждённый образец, материалы, спецификации, упаковка и критерии инспекции.",
+    "Approved sample, materials, specifications, packaging, and inspection criteria.": "Утверждённый образец, материалы, спецификации, упаковка и критерии инспекции.",
     "In-line": "В процессе производства",
-    "Workmanship, assembly, function, appearance, and corrective action during production.":
-      "Качество исполнения, сборка, функциональность, внешний вид и корректирующие действия во время производства.",
+    "Workmanship, assembly, function, appearance, and corrective action during production.": "Качество исполнения, сборка, функциональность, внешний вид и корректирующие действия во время производства.",
     "Pre-shipment": "Перед отгрузкой",
-    "Quantity, packaging, labeling, cartons, final product checks, and release decision.":
-      "Количество, упаковка, маркировка, короба, финальная проверка продукции и решение об отгрузке.",
+    "Quantity, packaging, labeling, cartons, final product checks, and release decision.": "Количество, упаковка, маркировка, короба, финальная проверка продукции и решение об отгрузке.",
     "Representative material storage": "Пример хранения материалов",
     "Material handling placeholder": "Временное изображение работы с материалами",
     "Compliance Support": "Поддержка соответствия требованиям",
     "Build the requirements into the brief.": "Включите требования в техническое задание.",
-    "Testing and compliance needs vary by product and market. We coordinate the project around the buyer’s applicable requirements and partner-lab process.":
-      "Требования к испытаниям и соответствию зависят от продукта и рынка. Мы координируем проект с учётом требований закупщика и процедур партнёрской лаборатории.",
+    "Testing and compliance needs vary by product and market. We coordinate the project around the buyer’s applicable requirements and partner-lab process.": "Требования к испытаниям и соответствию зависят от продукта и рынка. Мы координируем проект с учётом требований закупщика и процедур партнёрской лаборатории.",
     "EU reference": "Требования ЕС",
     "Toy safety": "Безопасность игрушек",
     "US reference": "Требования США",
@@ -361,20 +284,15 @@
     "Restricted substances": "Ограниченные вещества",
     "Chemical reference": "Химические требования",
     "Have a product in mind?": "Есть идея продукта?",
-    "Send the specification, target quantity, and market.":
-      "Отправьте спецификацию, целевое количество и рынок.",
-    "Request a manufacturing review": "Запросить оценку производства",
+    "Send the specification, target quantity, and market.": "Отправьте спецификацию, целевое количество и рынок.",
+    "Request a manufacturing review": "Запросить оценку производства"
   };
 
   const sourcing = {
-    "China Sourcing — ABERO Toy Supplier Network":
-      "Сорсинг в Китае — сеть поставщиков игрушек ABERO",
-    "ABERO supports toy supplier search, sampling, factory coordination, quality control, consolidation, and export preparation across China.":
-      "ABERO помогает искать поставщиков игрушек, заказывать образцы, координировать фабрики, контролировать качество, консолидировать заказы и готовить экспортные поставки по всему Китаю.",
-    "More supplier options. One coordinated process.":
-      "Больше поставщиков. Один скоординированный процесс.",
-    "We help international buyers search, compare, sample, follow, inspect, and prepare orders across a broad network of Chinese factories.":
-      "Мы помогаем международным закупщикам искать и сравнивать поставщиков, заказывать образцы, отслеживать и инспектировать производство, а также готовить заказы в широкой сети китайских фабрик.",
+    "China Sourcing — ABERO Toy Supplier Network": "Сорсинг в Китае — сеть поставщиков игрушек ABERO",
+    "ABERO supports toy supplier search, sampling, factory coordination, quality control, consolidation, and export preparation across China.": "ABERO помогает искать поставщиков игрушек, заказывать образцы, координировать фабрики, контролировать качество, консолидировать заказы и готовить экспортные поставки по всему Китаю.",
+    "More supplier options. One coordinated process.": "Больше поставщиков. Один скоординированный процесс.",
+    "We help international buyers search, compare, sample, follow, inspect, and prepare orders across a broad network of Chinese factories.": "Мы помогаем международным закупщикам искать и сравнивать поставщиков, заказывать образцы, отслеживать и инспектировать производство, а также готовить заказы в широкой сети китайских фабрик.",
     "How sourcing works": "Как работает сорсинг",
     "Send a sourcing brief": "Отправить заявку на сорсинг",
     "Factory relationships": "Фабрик-партнёров",
@@ -386,178 +304,126 @@
     "Regional sourcing support": "Региональная поддержка сорсинга",
     "Why ABERO": "Почему ABERO",
     "Sourcing is more than finding a quotation.": "Сорсинг — это больше, чем поиск цены.",
-    "A workable supplier must match the product, price, minimum order, quality level, lead time, communication needs, and destination-market requirements.":
-      "Подходящий поставщик должен соответствовать требованиям к продукту, цене, минимальному заказу, уровню качества, срокам, коммуникации и рынку назначения.",
-    "ABERO helps turn that comparison into a managed process. We organize the supplier shortlist, samples, commercial details, production follow-up, inspection, and export preparation around one buyer brief.":
-      "ABERO превращает сравнение поставщиков в управляемый процесс. На основе единого задания закупщика мы формируем короткий список фабрик, организуем образцы, согласуем коммерческие условия, отслеживаем производство, проводим инспекцию и готовим экспорт.",
+    "A workable supplier must match the product, price, minimum order, quality level, lead time, communication needs, and destination-market requirements.": "Подходящий поставщик должен соответствовать требованиям к продукту, цене, минимальному заказу, уровню качества, срокам, коммуникации и рынку назначения.",
+    "ABERO helps turn that comparison into a managed process. We organize the supplier shortlist, samples, commercial details, production follow-up, inspection, and export preparation around one buyer brief.": "ABERO превращает сравнение поставщиков в управляемый процесс. На основе единого задания закупщика мы формируем короткий список фабрик, организуем образцы, согласуем коммерческие условия, отслеживаем производство, проводим инспекцию и готовим экспорт.",
     "Shantou team · China factory network": "Команда в Шаньтоу · Сеть фабрик по Китаю",
     "Representative showroom and product-selection area": "Пример шоурума и зоны подбора продукции",
     "Sourcing Workflow": "Процесс сорсинга",
     "From search request to shipment release.": "От запроса на поиск до разрешения на отгрузку.",
-    "Each stage creates a clearer commercial and quality picture before the order moves forward.":
-      "Каждый этап уточняет коммерческие условия и требования к качеству до перехода заказа дальше.",
-    Define: "Определить задачу",
-    "Product, price, quantity, market, packaging, quality, and schedule.":
-      "Продукт, цена, количество, рынок, упаковка, качество и график.",
-    Search: "Найти",
-    "Identify suitable factories and compare key commercial conditions.":
-      "Найти подходящие фабрики и сравнить основные коммерческие условия.",
-    Sample: "Получить образцы",
-    "Coordinate samples, revisions, and buyer approval before ordering.":
-      "Организовать образцы, доработки и согласование закупщиком до заказа.",
-    Follow: "Сопровождать",
-    "Track production, packaging, deadlines, and issues with suppliers.":
-      "Отслеживать производство, упаковку, сроки и вопросы с поставщиками.",
-    Inspect: "Проверить",
-    "Arrange final checks and prepare goods for consolidation or shipment.":
-      "Организовать финальные проверки и подготовить товар к консолидации или отправке.",
+    "Each stage creates a clearer commercial and quality picture before the order moves forward.": "Каждый этап уточняет коммерческие условия и требования к качеству до перехода заказа дальше.",
+    "Define": "Определить задачу",
+    "Product, price, quantity, market, packaging, quality, and schedule.": "Продукт, цена, количество, рынок, упаковка, качество и график.",
+    "Search": "Найти",
+    "Identify suitable factories and compare key commercial conditions.": "Найти подходящие фабрики и сравнить основные коммерческие условия.",
+    "Sample": "Получить образцы",
+    "Coordinate samples, revisions, and buyer approval before ordering.": "Организовать образцы, доработки и согласование закупщиком до заказа.",
+    "Follow": "Сопровождать",
+    "Track production, packaging, deadlines, and issues with suppliers.": "Отслеживать производство, упаковку, сроки и вопросы с поставщиками.",
+    "Inspect": "Проверить",
+    "Arrange final checks and prepare goods for consolidation or shipment.": "Организовать финальные проверки и подготовить товар к консолидации или отправке.",
     "Regional Coverage": "Региональное покрытие",
-    "Match the category to the right production base.":
-      "Подберите для категории подходящий производственный регион.",
-    "Regional strengths help narrow the search and improve the fit between a product requirement and a supplier’s actual capability.":
-      "Региональная специализация помогает сузить поиск и точнее сопоставить требования к продукту с реальными возможностями поставщика.",
-    "Toys, ride-ons, vehicles, plastic products, and broad category showrooms.":
-      "Игрушки, машинки-каталки, транспорт, пластиковые товары и мультикатегорийные шоурумы.",
+    "Match the category to the right production base.": "Подберите для категории подходящий производственный регион.",
+    "Regional strengths help narrow the search and improve the fit between a product requirement and a supplier’s actual capability.": "Региональная специализация помогает сузить поиск и точнее сопоставить требования к продукту с реальными возможностями поставщика.",
+    "Toys, ride-ons, vehicles, plastic products, and broad category showrooms.": "Игрушки, машинки-каталки, транспорт, пластиковые товары и мультикатегорийные шоурумы.",
     "Shenzhen / Dongguan": "Шэньчжэнь / Дунгуань",
-    "Electronic products, connected components, tooling, and mixed processes.":
-      "Электронная продукция, подключаемые компоненты, оснастка и смешанные процессы.",
+    "Electronic products, connected components, tooling, and mixed processes.": "Электронная продукция, подключаемые компоненты, оснастка и смешанные процессы.",
     "Yiwu / Zhejiang": "Иу / Чжэцзян",
-    "Small commodities, accessories, promotional products, and seasonal ranges.":
-      "Мелкие товары, аксессуары, рекламная продукция и сезонный ассортимент.",
+    "Small commodities, accessories, promotional products, and seasonal ranges.": "Мелкие товары, аксессуары, рекламная продукция и сезонный ассортимент.",
     "Ningbo / East China": "Нинбо / Восточный Китай",
-    "Plastic products, outdoor items, packaging, and export-oriented suppliers.":
-      "Пластиковые товары, товары для улицы, упаковка и экспортно-ориентированные поставщики.",
+    "Plastic products, outdoor items, packaging, and export-oriented suppliers.": "Пластиковые товары, товары для улицы, упаковка и экспортно-ориентированные поставщики.",
     "Category Coverage": "Категории продукции",
-    "Build a focused range or a mixed-category program.":
-      "Создайте специализированный или мультикатегорийный ассортимент.",
-    "Category tags below are a practical first-pass placeholder for the final sourcing catalog.":
-      "Категории ниже служат рабочей заготовкой для будущего каталога сорсинга.",
+    "Build a focused range or a mixed-category program.": "Создайте специализированный или мультикатегорийный ассортимент.",
+    "Category tags below are a practical first-pass placeholder for the final sourcing catalog.": "Категории ниже служат рабочей заготовкой для будущего каталога сорсинга.",
     "Ride-on Cars": "Машинки-каталки",
-    Accessories: "Аксессуары",
-    Promotional: "Рекламная продукция",
+    "Accessories": "Аксессуары",
+    "Promotional": "Рекламная продукция",
     "Private Label": "Собственная марка",
     "Sourcing categories": "Категории сорсинга",
     "Showroom selection": "Подбор в шоуруме",
     "Product comparison": "Сравнение продукции",
     "Category breadth": "Широкий выбор категорий",
-    "Warehouse and order-preparation placeholder":
-      "Временное изображение склада и подготовки заказов",
+    "Warehouse and order-preparation placeholder": "Временное изображение склада и подготовки заказов",
     "Order Control": "Контроль заказов",
-    "Keep separate suppliers aligned to one delivery plan.":
-      "Объедините разных поставщиков единым планом поставки.",
-    "For multi-supplier orders, we can coordinate status updates, packaging information, inspection timing, consolidation readiness, and shipment handoffs against a shared plan.":
-      "Для заказов у нескольких поставщиков мы координируем статусы, данные об упаковке, сроки инспекции, готовность к консолидации и передачу груза по единому плану.",
+    "Keep separate suppliers aligned to one delivery plan.": "Объедините разных поставщиков единым планом поставки.",
+    "For multi-supplier orders, we can coordinate status updates, packaging information, inspection timing, consolidation readiness, and shipment handoffs against a shared plan.": "Для заказов у нескольких поставщиков мы координируем статусы, данные об упаковке, сроки инспекции, готовность к консолидации и передачу груза по единому плану.",
     "Supplier communication": "Связь с поставщиками",
     "Sample and approval tracking": "Отслеживание образцов и согласований",
     "Production status follow-up": "Контроль статуса производства",
     "Inspection and consolidation support": "Инспекция и поддержка консолидации",
     "Need a supplier shortlist?": "Нужен короткий список поставщиков?",
-    "Share the product, target price, quantity, and destination.":
-      "Укажите продукт, целевую цену, количество и место назначения.",
-    "Start a sourcing request": "Начать запрос на сорсинг",
+    "Share the product, target price, quantity, and destination.": "Укажите продукт, целевую цену, количество и место назначения.",
+    "Start a sourcing request": "Начать запрос на сорсинг"
   };
 
   const news = {
     "News & Insights — ABERO Toys": "Новости и материалы — ABERO Toys",
-    "ABERO news, buyer resources, manufacturing insights, showroom updates, and international toy fair planning.":
-      "Новости ABERO, материалы для закупщиков, информация о производстве, обновления шоурума и планирование международных выставок игрушек.",
+    "ABERO news, buyer resources, manufacturing insights, showroom updates, and international toy fair planning.": "Новости ABERO, материалы для закупщиков, информация о производстве, обновления шоурума и планирование международных выставок игрушек.",
     "News & Insights": "Новости и материалы",
-    "Updates for buyers, brands, and sourcing teams.":
-      "Новости для закупщиков, брендов и команд по сорсингу.",
-    "A first-pass editorial hub for ABERO company news, product-development guidance, showroom updates, and toy-industry event planning.":
-      "Первый вариант раздела с новостями ABERO, рекомендациями по разработке продукции, обновлениями шоурума и планами мероприятий индустрии игрушек.",
+    "Updates for buyers, brands, and sourcing teams.": "Новости для закупщиков, брендов и команд по сорсингу.",
+    "A first-pass editorial hub for ABERO company news, product-development guidance, showroom updates, and toy-industry event planning.": "Первый вариант раздела с новостями ABERO, рекомендациями по разработке продукции, обновлениями шоурума и планами мероприятий индустрии игрушек.",
     "Featured image placeholder · ABERO showroom": "Временное главное изображение · Шоурум ABERO",
     "Featured · Buyer Guide": "Главное · Руководство для закупщика",
-    "What to include in a useful OEM toy brief.":
-      "Что включить в эффективное техническое задание на OEM-игрушку.",
-    "A strong starting brief helps a factory evaluate feasibility, cost, tooling, materials, compliance, packaging, and lead time with fewer assumptions.":
-      "Хорошее исходное задание помогает фабрике точнее оценить осуществимость, стоимость, оснастку, материалы, соответствие требованиям, упаковку и сроки.",
+    "What to include in a useful OEM toy brief.": "Что включить в эффективное техническое задание на OEM-игрушку.",
+    "A strong starting brief helps a factory evaluate feasibility, cost, tooling, materials, compliance, packaging, and lead time with fewer assumptions.": "Хорошее исходное задание помогает фабрике точнее оценить осуществимость, стоимость, оснастку, материалы, соответствие требованиям, упаковку и сроки.",
     "5-minute read": "5 минут чтения",
     "Product Development": "Разработка продукта",
     "Use the inquiry form as your brief →": "Используйте форму запроса как техническое задание →",
     "Latest Insights": "Последние материалы",
-    "Evergreen content ready for final editing.":
-      "Полезные материалы, готовые к финальной редактуре.",
-    "These cards establish the page layout and content direction. Images from your asset folder are used as placeholders.":
-      "Эти карточки задают структуру страницы и направление контента. Изображения из папки ресурсов используются временно.",
-    Materials: "Материалы",
-    "Why material approval belongs at the start of production":
-      "Почему материалы нужно согласовывать до начала производства",
-    "How sample references, resin selection, color, and documentation support a stable production result.":
-      "Как эталонные образцы, выбор сырья, цвет и документация обеспечивают стабильный результат.",
+    "Evergreen content ready for final editing.": "Полезные материалы, готовые к финальной редактуре.",
+    "These cards establish the page layout and content direction. Images from your asset folder are used as placeholders.": "Эти карточки задают структуру страницы и направление контента. Изображения из папки ресурсов используются временно.",
+    "Materials": "Материалы",
+    "Why material approval belongs at the start of production": "Почему материалы нужно согласовывать до начала производства",
+    "How sample references, resin selection, color, and documentation support a stable production result.": "Как эталонные образцы, выбор сырья, цвет и документация обеспечивают стабильный результат.",
     "Explore the quality workflow →": "Посмотреть процесс контроля качества →",
-    Quality: "Качество",
-    Inspection: "Инспекция",
-    "Three checkpoints that reduce pre-shipment surprises":
-      "Три контрольные точки, которые снижают риски перед отгрузкой",
-    "Pre-production, in-line, and final inspection each answer a different project risk.":
-      "Проверки до производства, в процессе и на финальном этапе закрывают разные риски проекта.",
+    "Quality": "Качество",
+    "Inspection": "Инспекция",
+    "Three checkpoints that reduce pre-shipment surprises": "Три контрольные точки, которые снижают риски перед отгрузкой",
+    "Pre-production, in-line, and final inspection each answer a different project risk.": "Проверки до производства, в процессе и на финальном этапе закрывают разные риски проекта.",
     "See quality control →": "Подробнее о контроле качества →",
-    "How to compare factories beyond the lowest quotation":
-      "Как сравнивать фабрики, не ограничиваясь самой низкой ценой",
-    "MOQ, specialization, communication, capacity, compliance, and lead time all shape supplier fit.":
-      "Минимальный заказ, специализация, коммуникация, мощности, соответствие требованиям и сроки определяют пригодность поставщика.",
+    "How to compare factories beyond the lowest quotation": "Как сравнивать фабрики, не ограничиваясь самой низкой ценой",
+    "MOQ, specialization, communication, capacity, compliance, and lead time all shape supplier fit.": "Минимальный заказ, специализация, коммуникация, мощности, соответствие требованиям и сроки определяют пригодность поставщика.",
     "See the sourcing process →": "Посмотреть процесс сорсинга →",
-    Export: "Экспорт",
-    Shipment: "Отгрузка",
-    "Preparing a mixed-supplier order for consolidation":
-      "Подготовка заказа от нескольких поставщиков к консолидации",
-    "A practical look at status tracking, shipping marks, carton data, inspections, and warehouse timing.":
-      "Практический обзор отслеживания статусов, маркировки, данных о коробах, инспекций и складских сроков.",
+    "Export": "Экспорт",
+    "Shipment": "Отгрузка",
+    "Preparing a mixed-supplier order for consolidation": "Подготовка заказа от нескольких поставщиков к консолидации",
+    "A practical look at status tracking, shipping marks, carton data, inspections, and warehouse timing.": "Практический обзор отслеживания статусов, маркировки, данных о коробах, инспекций и складских сроков.",
     "Explore sourcing support →": "Подробнее о поддержке сорсинга →",
-    "How our Shantou team coordinates buyer projects":
-      "Как наша команда в Шаньтоу координирует проекты закупщиков",
-    "From first request to sample approval, production follow-up, and shipment preparation.":
-      "От первого запроса до согласования образца, контроля производства и подготовки к отгрузке.",
+    "How our Shantou team coordinates buyer projects": "Как наша команда в Шаньтоу координирует проекты закупщиков",
+    "From first request to sample approval, production follow-up, and shipment preparation.": "От первого запроса до согласования образца, контроля производства и подготовки к отгрузке.",
     "Meet ABERO →": "Познакомиться с ABERO →",
-    Milestones: "Достижения",
-    "A place for certifications, awards, and company announcements":
-      "Раздел для сертификатов, наград и новостей компании",
-    "This flexible card can later feature verified milestones, certifications, partnerships, or staff news.":
-      "Позже в этой карточке можно разместить подтверждённые достижения, сертификаты, партнёрства или новости команды.",
+    "Milestones": "Достижения",
+    "A place for certifications, awards, and company announcements": "Раздел для сертификатов, наград и новостей компании",
+    "This flexible card can later feature verified milestones, certifications, partnerships, or staff news.": "Позже в этой карточке можно разместить подтверждённые достижения, сертификаты, партнёрства или новости команды.",
     "About the company →": "О компании →",
     "Industry Calendar": "Календарь отрасли",
     "International toy events to watch.": "Международные события индустрии игрушек.",
-    "Participation and meeting details should be added only after ABERO confirms each event.":
-      "Информацию об участии и встречах следует добавлять только после подтверждения каждого события компанией ABERO.",
+    "Participation and meeting details should be added only after ABERO confirms each event.": "Информацию об участии и встречах следует добавлять только после подтверждения каждого события компанией ABERO.",
     "Details to be confirmed": "Информация уточняется",
-    "Hong Kong · International sourcing and product showcase":
-      "Гонконг · Международный сорсинг и презентация продукции",
+    "Hong Kong · International sourcing and product showcase": "Гонконг · Международный сорсинг и презентация продукции",
     "Ask about meetings": "Уточнить возможность встречи",
-    "Guangzhou · Multi-category international trade event":
-      "Гуанчжоу · Международная многопрофильная торговая выставка",
-    Spielwarenmesse: "Spielwarenmesse",
+    "Guangzhou · Multi-category international trade event": "Гуанчжоу · Международная многопрофильная торговая выставка",
+    "Spielwarenmesse": "Spielwarenmesse",
     "Nuremberg · Global toy-industry event": "Нюрнберг · Всемирное событие индустрии игрушек",
     "Planning a visit?": "Планируете визит?",
-    "Arrange a showroom or factory discussion in Shantou.":
-      "Организуйте встречу в шоуруме или на фабрике в Шаньтоу.",
-    "Contact ABERO": "Связаться с ABERO",
+    "Arrange a showroom or factory discussion in Shantou.": "Организуйте встречу в шоуруме или на фабрике в Шаньтоу.",
+    "Contact ABERO": "Связаться с ABERO"
   };
 
   const contact = {
-    "Contact ABERO — Manufacturing & Sourcing Inquiry":
-      "Связаться с ABERO — запрос на производство и сорсинг",
-    "Contact ABERO in Shantou, China about toy manufacturing, OEM/ODM development, supplier sourcing, quality control, and export preparation.":
-      "Свяжитесь с ABERO в Шаньтоу по вопросам производства игрушек, разработки OEM/ODM, поиска поставщиков, контроля качества и подготовки к экспорту.",
-    "Start with your product or sourcing brief.":
-      "Начните с описания продукта или задачи по сорсингу.",
-    "Share the market, product, target price, estimated quantity, timing, packaging, and compliance requirements you already know. We’ll use that to identify the most practical next step.":
-      "Укажите рынок, продукт, целевую цену, примерное количество, сроки, упаковку и известные требования к соответствию. Это поможет определить наиболее практичный следующий шаг.",
+    "Contact ABERO — Manufacturing & Sourcing Inquiry": "Связаться с ABERO — запрос на производство и сорсинг",
+    "Contact ABERO in Shantou, China about toy manufacturing, OEM/ODM development, supplier sourcing, quality control, and export preparation.": "Свяжитесь с ABERO в Шаньтоу по вопросам производства игрушек, разработки OEM/ODM, поиска поставщиков, контроля качества и подготовки к экспорту.",
+    "Start with your product or sourcing brief.": "Начните с описания продукта или задачи по сорсингу.",
+    "Share the market, product, target price, estimated quantity, timing, packaging, and compliance requirements you already know. We’ll use that to identify the most practical next step.": "Укажите рынок, продукт, целевую цену, примерное количество, сроки, упаковку и известные требования к соответствию. Это поможет определить наиболее практичный следующий шаг.",
     "Project Inquiry": "Запрос по проекту",
-    "Give us enough context to evaluate the right path.":
-      "Дайте нам достаточно информации, чтобы выбрать правильный путь.",
-    "You do not need a complete specification to begin. A reference photo, product link, sketch, current sample, or simple requirement list can be enough for the first review.":
-      "Для начала не нужна полная спецификация. Для первой оценки достаточно фотографии, ссылки на продукт, эскиза, имеющегося образца или простого списка требований.",
-    "OEM/ODM development, tooling, production, packaging, and quality control.":
-      "Разработка OEM/ODM, оснастка, производство, упаковка и контроль качества.",
-    "Supplier search, samples, quotations, order follow-up, and consolidation.":
-      "Поиск поставщиков, образцы, коммерческие предложения, сопровождение заказа и консолидация.",
-    Location: "Местоположение",
+    "Give us enough context to evaluate the right path.": "Дайте нам достаточно информации, чтобы выбрать правильный путь.",
+    "You do not need a complete specification to begin. A reference photo, product link, sketch, current sample, or simple requirement list can be enough for the first review.": "Для начала не нужна полная спецификация. Для первой оценки достаточно фотографии, ссылки на продукт, эскиза, имеющегося образца или простого списка требований.",
+    "OEM/ODM development, tooling, production, packaging, and quality control.": "Разработка OEM/ODM, оснастка, производство, упаковка и контроль качества.",
+    "Supplier search, samples, quotations, order follow-up, and consolidation.": "Поиск поставщиков, образцы, коммерческие предложения, сопровождение заказа и консолидация.",
+    "Location": "Местоположение",
     "ABERO team · Shantou, Guangdong, China.": "Команда ABERO · Шаньтоу, Гуандун, Китай.",
     "Meeting-room image placeholder": "Временное изображение переговорной комнаты",
     "Tell us about the project": "Расскажите о проекте",
-    "Fields marked with * are the best starting information.":
-      "Поля со знаком * — основная информация для начала работы.",
+    "Fields marked with * are the best starting information.": "Поля со знаком * — основная информация для начала работы.",
     "Work email *": "Рабочая эл. почта *",
     "Country / market": "Страна / рынок",
     "Project type *": "Тип проекта *",
@@ -571,173 +437,127 @@
     "Target delivery": "Желаемый срок поставки",
     "Product or project details *": "Описание продукта или проекта *",
     "Reference files": "Справочные материалы",
-    "File upload will be connected in the final form setup.":
-      "Загрузка файлов будет подключена при финальной настройке формы.",
+    "File upload will be connected in the final form setup.": "Загрузка файлов будет подключена при финальной настройке формы.",
     "Example: 5,000 units": "Например: 5 000 шт.",
     "Example: Q4 / specific date": "Например: 4-й квартал / точная дата",
-    "Product, target price, packaging, destination market, certifications, and any references you have.":
-      "Продукт, целевая цена, упаковка, рынок назначения, сертификаты и имеющиеся материалы.",
-    "For now, list the filenames or links you plan to send.":
-      "Пока укажите названия файлов или ссылки, которые планируете отправить.",
-    "This prototype form is ready to be connected to ABERO’s preferred email inbox or CRM.":
-      "Эта форма-прототип готова к подключению к почте или CRM компании ABERO.",
+    "Product, target price, packaging, destination market, certifications, and any references you have.": "Продукт, целевая цена, упаковка, рынок назначения, сертификаты и имеющиеся материалы.",
+    "For now, list the filenames or links you plan to send.": "Пока укажите названия файлов или ссылки, которые планируете отправить.",
+    "This prototype form is ready to be connected to ABERO’s preferred email inbox or CRM.": "Эта форма-прототип готова к подключению к почте или CRM компании ABERO.",
     "Before You Send": "Перед отправкой",
-    "A stronger brief gets a stronger first answer.":
-      "Чем точнее задача, тем полезнее первый ответ.",
-    "Include what you know and leave the rest for discussion.":
-      "Укажите всё, что знаете, а остальное обсудим.",
+    "A stronger brief gets a stronger first answer.": "Чем точнее задача, тем полезнее первый ответ.",
+    "Include what you know and leave the rest for discussion.": "Укажите всё, что знаете, а остальное обсудим.",
     "Product reference": "Пример продукта",
-    "Photo, link, sketch, sample, dimensions, or a similar item.":
-      "Фотография, ссылка, эскиз, образец, размеры или похожий товар.",
+    "Photo, link, sketch, sample, dimensions, or a similar item.": "Фотография, ссылка, эскиз, образец, размеры или похожий товар.",
     "Commercial target": "Коммерческие параметры",
-    "Target price, estimated quantity, packaging, and delivery timing.":
-      "Целевая цена, ориентировочное количество, упаковка и срок поставки.",
+    "Target price, estimated quantity, packaging, and delivery timing.": "Целевая цена, ориентировочное количество, упаковка и срок поставки.",
     "Destination market": "Рынок назначения",
-    "Country, retailer, age grade, labeling, and compliance expectations.":
-      "Страна, продавец, возрастная группа, маркировка и требования к соответствию.",
+    "Country, retailer, age grade, labeling, and compliance expectations.": "Страна, продавец, возрастная группа, маркировка и требования к соответствию.",
     "Decision stage": "Стадия принятия решения",
-    "Early concept, quotation comparison, sample review, or active order.":
-      "Ранняя концепция, сравнение предложений, проверка образца или действующий заказ.",
+    "Early concept, quotation comparison, sample review, or active order.": "Ранняя концепция, сравнение предложений, проверка образца или действующий заказ.",
     "Frequently Asked": "Частые вопросы",
     "Useful answers before the first conversation.": "Полезные ответы до первого разговора.",
-    "Can ABERO help if I only have a product idea?":
-      "Может ли ABERO помочь, если у меня есть только идея продукта?",
-    "Yes. Share the intended user, core function, target market, price range, quantity, and any visual references. ABERO can help identify the development and supplier path to evaluate first.":
-      "Да. Укажите предполагаемого пользователя, основную функцию, целевой рынок, диапазон цены, количество и визуальные примеры. ABERO поможет определить, какой вариант разработки и поставщика оценить в первую очередь.",
-    "Can I request sourcing for an existing product?":
-      "Можно ли заказать сорсинг уже существующего продукта?",
-    "Yes. A clear product reference, specification, quantity, packaging requirement, and target market will make the supplier comparison more useful.":
-      "Да. Чёткий пример продукта, спецификация, количество, требования к упаковке и целевой рынок помогут эффективнее сравнить поставщиков.",
-    "When should compliance requirements be discussed?":
-      "Когда нужно обсуждать требования к соответствию?",
-    "At the beginning. The destination market, age grade, product type, materials, and retailer requirements can affect design, cost, testing, labeling, and factory selection.":
-      "В самом начале. Рынок назначения, возрастная группа, тип продукта, материалы и требования продавца могут повлиять на конструкцию, стоимость, испытания, маркировку и выбор фабрики.",
-    "Can ABERO coordinate several suppliers?":
-      "Может ли ABERO координировать нескольких поставщиков?",
-    "Yes. Multi-supplier support can include status follow-up, sample tracking, packaging data, inspections, consolidation planning, and shipment readiness.":
-      "Да. Сопровождение нескольких поставщиков может включать контроль статусов, отслеживание образцов, данные об упаковке, инспекции, планирование консолидации и подготовку к отгрузке.",
+    "Can ABERO help if I only have a product idea?": "Может ли ABERO помочь, если у меня есть только идея продукта?",
+    "Yes. Share the intended user, core function, target market, price range, quantity, and any visual references. ABERO can help identify the development and supplier path to evaluate first.": "Да. Укажите предполагаемого пользователя, основную функцию, целевой рынок, диапазон цены, количество и визуальные примеры. ABERO поможет определить, какой вариант разработки и поставщика оценить в первую очередь.",
+    "Can I request sourcing for an existing product?": "Можно ли заказать сорсинг уже существующего продукта?",
+    "Yes. A clear product reference, specification, quantity, packaging requirement, and target market will make the supplier comparison more useful.": "Да. Чёткий пример продукта, спецификация, количество, требования к упаковке и целевой рынок помогут эффективнее сравнить поставщиков.",
+    "When should compliance requirements be discussed?": "Когда нужно обсуждать требования к соответствию?",
+    "At the beginning. The destination market, age grade, product type, materials, and retailer requirements can affect design, cost, testing, labeling, and factory selection.": "В самом начале. Рынок назначения, возрастная группа, тип продукта, материалы и требования продавца могут повлиять на конструкцию, стоимость, испытания, маркировку и выбор фабрики.",
+    "Can ABERO coordinate several suppliers?": "Может ли ABERO координировать нескольких поставщиков?",
+    "Yes. Multi-supplier support can include status follow-up, sample tracking, packaging data, inspections, consolidation planning, and shipment readiness.": "Да. Сопровождение нескольких поставщиков может включать контроль статусов, отслеживание образцов, данные об упаковке, инспекции, планирование консолидации и подготовку к отгрузке."
   };
 
   const revisions = {
     "News & Fairs": "Новости и выставки",
-    "Produced in Shantou. Ready for global toy markets":
-      "Произведено в Шаньтоу. Готово для мирового рынка игрушек",
+    "Produced in Shantou. Ready for global toy markets": "Произведено в Шаньтоу. Готово для мирового рынка игрушек",
     "30+": "30+",
     "Years of export experience": "Лет экспортного опыта",
-    "One manufacturer. One sourcing partner. One reliable team.":
-      "Один производитель. Один партнёр по сорсингу. Одна надёжная команда.",
-    "ABERO is a toy manufacturer based in Shantou, one of China's leading toy production hubs. We develop and manufacture our own products while also helping international brands and retailers bring new ideas to market through reliable manufacturing and sourcing solutions.":
-      "ABERO — производитель игрушек из Шаньтоу, одного из ведущих центров игрушечной промышленности Китая. Мы разрабатываем и выпускаем собственную продукцию, а также помогаем международным брендам и ритейлерам выводить новые идеи на рынок благодаря надёжному производству и сорсингу.",
-    "Beyond our own production, we work with a carefully selected network of trusted factories to support OEM and ODM projects, specialized product categories, and large-scale sourcing programs. We coordinate supplier communication, product development, production management, quality control, packaging, and export to ensure every project meets your requirements.":
-      "Помимо собственного производства, мы работаем с тщательно отобранной сетью проверенных фабрик для поддержки OEM- и ODM-проектов, специализированных категорий и масштабных программ сорсинга. Мы координируем поставщиков, разработку, производство, контроль качества, упаковку и экспорт, чтобы каждый проект соответствовал вашим требованиям.",
+    "One manufacturer. One sourcing partner. One reliable team.": "Один производитель. Один партнёр по сорсингу. Одна надёжная команда.",
+    "ABERO is a toy manufacturer based in Shantou, one of China's leading toy production hubs. We develop and manufacture our own products while also helping international brands and retailers bring new ideas to market through reliable manufacturing and sourcing solutions.": "ABERO — производитель игрушек из Шаньтоу, одного из ведущих центров игрушечной промышленности Китая. Мы разрабатываем и выпускаем собственную продукцию, а также помогаем международным брендам и ритейлерам выводить новые идеи на рынок благодаря надёжному производству и сорсингу.",
+    "Beyond our own production, we work with a carefully selected network of trusted factories to support OEM and ODM projects, specialized product categories, and large-scale sourcing programs. We coordinate supplier communication, product development, production management, quality control, packaging, and export to ensure every project meets your requirements.": "Помимо собственного производства, мы работаем с тщательно отобранной сетью проверенных фабрик для поддержки OEM- и ODM-проектов, специализированных категорий и масштабных программ сорсинга. Мы координируем поставщиков, разработку, производство, контроль качества, упаковку и экспорт, чтобы каждый проект соответствовал вашим требованиям.",
     "Own manufacturing and product development": "Собственное производство и разработка продукции",
     "OEM & ODM production": "Производство OEM и ODM",
     "Strategic supplier network across China": "Стратегическая сеть поставщиков по всему Китаю",
     "Production management and quality control": "Управление производством и контроль качества",
-    "Packaging, compliance and export coordination":
-      "Упаковка, соответствие требованиям и координация экспорта",
+    "Packaging, compliance and export coordination": "Упаковка, соответствие требованиям и координация экспорта",
     "Meeting room": "Переговорная комната",
     "Front desk": "Стойка регистрации",
-    Office: "Офис",
-    Awards: "Награды",
-    "One clear process from product idea to shipment":
-      "Единый понятный процесс от идеи продукта до отгрузки",
-    "Every project is managed by one responsible team, keeping product development, pricing, production, quality control, packaging, and delivery aligned at every stage.":
-      "Каждый проект ведёт одна ответственная команда, согласуя разработку, цены, производство, контроль качества, упаковку и доставку на всех этапах.",
+    "Office": "Офис",
+    "Awards": "Награды",
+    "One clear process from product idea to shipment": "Единый понятный процесс от идеи продукта до отгрузки",
+    "Every project is managed by one responsible team, keeping product development, pricing, production, quality control, packaging, and delivery aligned at every stage.": "Каждый проект ведёт одна ответственная команда, согласуя разработку, цены, производство, контроль качества, упаковку и доставку на всех этапах.",
     "Define the project": "Определить проект",
-    "Understand the brief. Product concept, target market, quantity, target price, packaging, timing, and compliance requirements.":
-      "Понять задачу. Концепция продукта, целевой рынок, количество, цена, упаковка, сроки и требования соответствия.",
+    "Understand the brief. Product concept, target market, quantity, target price, packaging, timing, and compliance requirements.": "Понять задачу. Концепция продукта, целевой рынок, количество, цена, упаковка, сроки и требования соответствия.",
     "Choose the production route": "Выбрать производственный маршрут",
-    "Select the right solution. Own production, OEM/ODM development, or sourcing through our network of qualified manufacturing partners.":
-      "Выбрать подходящее решение: собственное производство, разработку OEM/ODM или сорсинг через сеть квалифицированных партнёров.",
+    "Select the right solution. Own production, OEM/ODM development, or sourcing through our network of qualified manufacturing partners.": "Выбрать подходящее решение: собственное производство, разработку OEM/ODM или сорсинг через сеть квалифицированных партнёров.",
     "Manage development and production": "Управлять разработкой и производством",
-    "Control every detail. Samples, specifications, tooling, materials, packaging, production schedules, quality inspections, and progress updates.":
-      "Контролировать каждую деталь: образцы, спецификации, оснастку, материалы, упаковку, график производства, инспекции и отчёты о ходе работ.",
+    "Control every detail. Samples, specifications, tooling, materials, packaging, production schedules, quality inspections, and progress updates.": "Контролировать каждую деталь: образцы, спецификации, оснастку, материалы, упаковку, график производства, инспекции и отчёты о ходе работ.",
     "Prepare and deliver": "Подготовить и доставить",
-    "Complete the export process. Final quality checks, carton planning, documentation, loading coordination, and shipment preparation.":
-      "Завершить экспортный процесс: финальные проверки, планирование коробов, документация, координация погрузки и подготовка отгрузки.",
+    "Complete the export process. Final quality checks, carton planning, documentation, loading coordination, and shipment preparation.": "Завершить экспортный процесс: финальные проверки, планирование коробов, документация, координация погрузки и подготовка отгрузки.",
     "Working environment": "Рабочая среда",
-    "Spaces where we develop and manufacture our products, coordinate projects, present collections, and prepare orders for shipment.":
-      "Пространства, где мы разрабатываем и производим продукцию, координируем проекты, представляем коллекции и готовим заказы к отгрузке.",
-    Factory: "Фабрика",
-    Production: "Производство",
+    "Spaces where we develop and manufacture our products, coordinate projects, present collections, and prepare orders for shipment.": "Пространства, где мы разрабатываем и производим продукцию, координируем проекты, представляем коллекции и готовим заказы к отгрузке.",
+    "Factory": "Фабрика",
+    "Production": "Производство",
     "Tell us what you want to make or source": "Расскажите, что вы хотите произвести или найти",
 
-    "From product brief to export-ready production":
-      "От описания продукта до производства, готового к экспорту",
+    "From product brief to export-ready production": "От описания продукта до производства, готового к экспорту",
     "Factory Profile": "Профиль фабрики",
-    "Stable production, ready for international projects":
-      "Стабильное производство, готовое к международным проектам",
-    "Own manufacturing in Shantou combined with experienced OEM and ODM support for international retailers, licensed brands, and global markets.":
-      "Собственное производство в Шаньтоу и опытная поддержка OEM и ODM для международных ритейлеров, лицензированных брендов и мировых рынков.",
+    "Stable production, ready for international projects": "Стабильное производство, готовое к международным проектам",
+    "Own manufacturing in Shantou combined with experienced OEM and ODM support for international retailers, licensed brands, and global markets.": "Собственное производство в Шаньтоу и опытная поддержка OEM и ODM для международных ритейлеров, лицензированных брендов и мировых рынков.",
     "Year established": "Год основания",
-    Location: "Местоположение",
+    "Location": "Местоположение",
     "Factory area": "Площадь фабрики",
-    Employees: "Сотрудники",
+    "Employees": "Сотрудники",
     "Active products": "Активные позиции",
     "Production capacity": "Производственная мощность",
     "6 lines · up to 8,000 units daily": "6 линий · до 8 000 единиц в день",
-    "Comprehensive manufacturing services with extensive ODM experience for international retailers and licensed brands":
-      "Комплексные производственные услуги и большой опыт ODM для международных ритейлеров и лицензированных брендов",
+    "Comprehensive manufacturing services with extensive ODM experience for international retailers and licensed brands": "Комплексные производственные услуги и большой опыт ODM для международных ритейлеров и лицензированных брендов",
     "Global reach": "Международный охват",
     "Quality standards": "Стандарты качества",
     "Extensive product selection and presentation": "Масштабный выбор и презентация продукции",
-    "Our showroom helps buyers review products, compare categories, build ranges, and discuss development opportunities with our team.":
-      "Наш шоурум помогает покупателям изучать продукцию, сравнивать категории, формировать ассортимент и обсуждать возможности разработки с нашей командой.",
+    "Our showroom helps buyers review products, compare categories, build ranges, and discuss development opportunities with our team.": "Наш шоурум помогает покупателям изучать продукцию, сравнивать категории, формировать ассортимент и обсуждать возможности разработки с нашей командой.",
     "Main showroom": "Главный шоурум",
     "Assortment selection": "Формирование ассортимента",
     "Product presentation": "Презентация продукции",
     "Buyer meetings": "Встречи с покупателями",
     "Production and quality control in operation": "Производство и контроль качества в работе",
-    "From manufacturing processes to final packing, our team follows the approved product specifications and quality requirements at every stage.":
-      "От производственных процессов до финальной упаковки наша команда контролирует соответствие утверждённым спецификациям и требованиям качества на каждом этапе.",
+    "From manufacturing processes to final packing, our team follows the approved product specifications and quality requirements at every stage.": "От производственных процессов до финальной упаковки наша команда контролирует соответствие утверждённым спецификациям и требованиям качества на каждом этапе.",
     "Production workshop": "Производственный цех",
-    Equipment: "Оборудование",
+    "Equipment": "Оборудование",
     "Packaging and preparation": "Упаковка и подготовка",
-    "Send the specification, target quantity, and market":
-      "Отправьте спецификацию, целевое количество и рынок",
+    "Send the specification, target quantity, and market": "Отправьте спецификацию, целевое количество и рынок",
 
-    "More supplier options. One coordinated process":
-      "Больше вариантов поставщиков. Один скоординированный процесс",
+    "More supplier options. One coordinated process": "Больше вариантов поставщиков. Один скоординированный процесс",
     "Toys and more": "Игрушки и многое другое",
     "Multi-category sourcing": "Мультикатегорийный сорсинг",
     "Sourcing is more than finding a supplier": "Сорсинг — это больше, чем поиск поставщика",
-    "Our B2B sourcing model combines local expertise with on-the-ground execution. Operating from our sourcing offices in Shantou and Yiwu, we help international buyers identify reliable manufacturers and manage sourcing projects across China.":
-      "Наша B2B-модель сорсинга объединяет местную экспертизу и работу на месте. Из офисов в Шаньтоу и Иу мы помогаем международным покупателям находить надёжных производителей и управлять проектами по всему Китаю.",
-    "ABERO manages the entire sourcing process — from supplier selection and quotation comparison to sampling, production follow-up, quality inspection, and export coordination. One team. One process. One accountable partner.":
-      "ABERO управляет всем процессом сорсинга — от выбора поставщика и сравнения предложений до образцов, контроля производства, инспекции качества и координации экспорта. Одна команда. Один процесс. Один ответственный партнёр.",
+    "Our B2B sourcing model combines local expertise with on-the-ground execution. Operating from our sourcing offices in Shantou and Yiwu, we help international buyers identify reliable manufacturers and manage sourcing projects across China.": "Наша B2B-модель сорсинга объединяет местную экспертизу и работу на месте. Из офисов в Шаньтоу и Иу мы помогаем международным покупателям находить надёжных производителей и управлять проектами по всему Китаю.",
+    "ABERO manages the entire sourcing process — from supplier selection and quotation comparison to sampling, production follow-up, quality inspection, and export coordination. One team. One process. One accountable partner.": "ABERO управляет всем процессом сорсинга — от выбора поставщика и сравнения предложений до образцов, контроля производства, инспекции качества и координации экспорта. Одна команда. Один процесс. Один ответственный партнёр.",
     "ABERO sourcing team": "Команда сорсинга ABERO",
     "Supplier selection": "Выбор поставщика",
     "Quotation comparison": "Сравнение предложений",
-    Sampling: "Образцы",
+    "Sampling": "Образцы",
     "Production follow-up": "Контроль производства",
     "Quality inspection": "Инспекция качества",
     "Export coordination": "Координация экспорта",
     "One accountable partner": "Один ответственный партнёр",
-    "Match the category to the right production base":
-      "Подбираем подходящую производственную базу для каждой категории",
+    "Match the category to the right production base": "Подбираем подходящую производственную базу для каждой категории",
     "How we build a product range": "Как мы формируем ассортимент",
-    "Category development is organized around a clear commercial brief and a repeatable selection process.":
-      "Формирование категории строится вокруг чёткой коммерческой задачи и системного процесса отбора.",
+    "Category development is organized around a clear commercial brief and a repeatable selection process.": "Формирование категории строится вокруг чёткой коммерческой задачи и системного процесса отбора.",
     "Analyze the market": "Анализ рынка",
     "Select suppliers": "Выбор фабрик",
     "Review samples": "Отбор образцов",
     "Compare quotations": "Сравнение цен",
     "Finalize the assortment": "Финальный ассортимент",
-    "Share the product, target price, quantity, and destination":
-      "Укажите продукт, целевую цену, количество и направление поставки",
+    "Share the product, target price, quantity, and destination": "Укажите продукт, целевую цену, количество и направление поставки",
 
     "Meet ABERO at Global Toy Fairs": "Встречайте ABERO на мировых выставках игрушек",
-    "Meet our experts, explore leading manufacturers, and turn your trade fair visit into real business opportunities!":
-      "Встретьтесь с нашими экспертами, познакомьтесь с ведущими производителями и превратите посещение выставки в реальные деловые возможности!",
+    "Meet our experts, explore leading manufacturers, and turn your trade fair visit into real business opportunities!": "Встретьтесь с нашими экспертами, познакомьтесь с ведущими производителями и превратите посещение выставки в реальные деловые возможности!",
     "International Events": "Международные события",
-    "Visit the world's biggest toy fairs with ABERO":
-      "Посетите крупнейшие мировые выставки игрушек вместе с ABERO",
-    "Meet our team at leading industry events, then continue the conversation with factory, showroom, and sourcing visits in China.":
-      "Встретьтесь с нашей командой на ведущих отраслевых мероприятиях, а затем продолжите общение во время визита на фабрику, в шоурум и сорсинговые центры Китая.",
-    January: "Январь",
-    February: "Февраль",
-    October: "Октябрь",
+    "Visit the world's biggest toy fairs with ABERO": "Посетите крупнейшие мировые выставки игрушек вместе с ABERO",
+    "Meet our team at leading industry events, then continue the conversation with factory, showroom, and sourcing visits in China.": "Встретьтесь с нашей командой на ведущих отраслевых мероприятиях, а затем продолжите общение во время визита на фабрику, в шоурум и сорсинговые центры Китая.",
+    "January": "Январь",
+    "February": "Февраль",
+    "October": "Октябрь",
     "April–May · October–November": "Апрель–май · октябрь–ноябрь",
     "Arrange a meeting": "Назначить встречу",
     "ABERO exhibition stand": "Выставочный стенд ABERO",
@@ -746,21 +566,17 @@
     "International exhibition": "Международная выставка",
     "ABERO team": "Команда ABERO",
     "Plan your visit": "Запланируйте визит",
-    "Arrange a meeting in our showroom or factory in Shantou":
-      "Организуйте встречу в шоуруме или на фабрике в Шаньтоу",
-    "Visit ABERO's factory, explore our showroom, discuss active projects with the team, and tour public showrooms containing thousands of ready-to-source products.":
-      "Посетите фабрику ABERO, изучите наш шоурум, обсудите проекты с командой и побывайте в публичных шоурумах с тысячами готовых к закупке товаров.",
+    "Arrange a meeting in our showroom or factory in Shantou": "Организуйте встречу в шоуруме или на фабрике в Шаньтоу",
+    "Visit ABERO's factory, explore our showroom, discuss active projects with the team, and tour public showrooms containing thousands of ready-to-source products.": "Посетите фабрику ABERO, изучите наш шоурум, обсудите проекты с командой и побывайте в публичных шоурумах с тысячами готовых к закупке товаров.",
 
     "Let’s Build Your Project Together": "Давайте создадим ваш проект вместе",
-    "Whether you already have a product idea or are just starting your sourcing journey, our team will help you find the right manufacturers, develop your products, control quality, and deliver them safely to your market.":
-      "Если у вас уже есть идея продукта или вы только начинаете поиск поставщиков, наша команда поможет найти подходящих производителей, разработать продукцию, проконтролировать качество и безопасно доставить товар на ваш рынок.",
+    "Whether you already have a product idea or are just starting your sourcing journey, our team will help you find the right manufacturers, develop your products, control quality, and deliver them safely to your market.": "Если у вас уже есть идея продукта или вы только начинаете поиск поставщиков, наша команда поможет найти подходящих производителей, разработать продукцию, проконтролировать качество и безопасно доставить товар на ваш рынок.",
     "Response within 24 hours": "Ответ в течение 24 часов",
     "No obligation consultation": "Бесплатная консультация без обязательств",
     "Multilingual team": "Многоязычная команда",
     "Free supplier evaluation": "Бесплатная оценка поставщика",
     "Let’s Discuss Your Next Product": "Давайте обсудим ваш следующий продукт",
-    "Whether you already have a product idea or just an inspiration photo, our team will help you find the right solution.":
-      "Если у вас уже есть идея продукта или только вдохновляющая фотография, наша команда поможет найти подходящее решение.",
+    "Whether you already have a product idea or just an inspiration photo, our team will help you find the right solution.": "Если у вас уже есть идея продукта или только вдохновляющая фотография, наша команда поможет найти подходящее решение.",
     "Shantou & Yiwu, China": "Шаньтоу и Иу, Китай",
 
     "ABERO factory building in Shantou": "Здание фабрики ABERO в Шаньтоу",
@@ -769,7 +585,7 @@
     "ABERO main toy showroom": "Главный шоурум игрушек ABERO",
     "ABERO toy assortment display": "Экспозиция ассортимента игрушек ABERO",
     "ABERO showroom shelves": "Стеллажи шоурума ABERO",
-    "ABERO exhibition team": "Выставочная команда ABERO",
+    "ABERO exhibition team": "Выставочная команда ABERO"
   };
 
   const imageText = {
@@ -788,12 +604,9 @@
     "Production quality check": "Проверка качества на производстве",
     "Production and packing area": "Зона производства и упаковки",
     "ABERO awards display": "Экспозиция наград ABERO",
-    "Product display placeholder for Hong Kong Toys and Games Fair update":
-      "Временное изображение продукции для новости о Гонконгской выставке игрушек и игр",
-    "Showroom placeholder for Canton Fair update":
-      "Временное изображение шоурума для новости о Кантонской ярмарке",
-    "Awards display placeholder for Nuremberg Toy Fair update":
-      "Временное изображение наград для новости о Нюрнбергской выставке игрушек",
+    "Product display placeholder for Hong Kong Toys and Games Fair update": "Временное изображение продукции для новости о Гонконгской выставке игрушек и игр",
+    "Showroom placeholder for Canton Fair update": "Временное изображение шоурума для новости о Кантонской ярмарке",
+    "Awards display placeholder for Nuremberg Toy Fair update": "Временное изображение наград для новости о Нюрнбергской выставке игрушек",
     "ABERO showroom display": "Экспозиция шоурума ABERO",
     "ABERO conference room and awards display": "Переговорная комната и экспозиция наград ABERO",
     "Wide view of ABERO toy showroom": "Панорамный вид шоурума игрушек ABERO",
@@ -815,35 +628,128 @@
     "Wall of toy products in showroom": "Стена с игрушечной продукцией в шоуруме",
     "Prepared goods and cartons in warehouse": "Подготовленные товары и короба на складе",
     "ABERO showroom and client discussion area": "Шоурум ABERO и зона переговоров с клиентами",
-    "ABERO showroom product podium used as a story image placeholder":
-      "Подиум с продукцией в шоуруме ABERO — временное изображение статьи",
-    "Material storage used as an article placeholder":
-      "Склад материалов — временное изображение статьи",
-    "Production floor used as an article placeholder":
-      "Производственный цех — временное изображение статьи",
+    "ABERO showroom product podium used as a story image placeholder": "Подиум с продукцией в шоуруме ABERO — временное изображение статьи",
+    "Material storage used as an article placeholder": "Склад материалов — временное изображение статьи",
+    "Production floor used as an article placeholder": "Производственный цех — временное изображение статьи",
     "Toy showroom used as an article placeholder": "Шоурум игрушек — временное изображение статьи",
-    "Warehouse area used as an article placeholder":
-      "Складская зона — временное изображение статьи",
-    "ABERO reception area used as an article placeholder":
-      "Зона приёма ABERO — временное изображение статьи",
-    "ABERO awards display used as an article placeholder":
-      "Экспозиция наград ABERO — временное изображение статьи",
+    "Warehouse area used as an article placeholder": "Складская зона — временное изображение статьи",
+    "ABERO reception area used as an article placeholder": "Зона приёма ABERO — временное изображение статьи",
+    "ABERO awards display used as an article placeholder": "Экспозиция наград ABERO — временное изображение статьи",
     "ABERO office entrance in Shantou": "Вход в офис ABERO в Шаньтоу",
-    "ABERO meeting room": "Переговорная комната ABERO",
+    "ABERO meeting room": "Переговорная комната ABERO"
+  };
+
+  const currentBuild = {
+    "ABERO Shantou production base": "Производственная база ABERO в Шаньтоу",
+    "Shantou production base": "Производственная база в Шаньтоу",
+    "Operating since 1996": "Работаем с 1996 года",
+    "80,000 m² manufacturing facility": "Производственный комплекс площадью 80 000 м²",
+    "Production and support team": "Производственная и вспомогательная команда",
+    "Active SKUs": "Активные SKU",
+    "Lines · up to 8,000 units daily": "Линий · до 8 000 единиц в день",
+    "Header": "Шапка сайта",
+    "Hero": "Главный экран",
+    "Footer": "Подвал сайта",
+    "About": "О компании",
+    "Certifications": "Сертификация",
+    "Shantou, China": "Шаньтоу, Китай",
+    "Shantou city center": "Центр Шаньтоу",
+    "Yiwu city and market district": "Город Иу и торговый район",
+    "Shenzhen city skyline": "Панорама Шэньчжэня",
+    "Ningbo city and river": "Город Нинбо и река",
+    "Capability Infographic": "Инфографика возможностей",
+    "Exhibition Modal": "Окно выставки",
+    "One partner": "Один партнёр",
+    "From product idea": "От идеи продукта",
+    "To international delivery.": "До международной доставки.",
+    "Factory Network": "Сеть фабрик",
+    "3-STAGE": "3 ЭТАПА",
+    "A coordinated manufacturing process built around quality, transparency, and reliable delivery.": "Скоординированный производственный процесс, основанный на качестве, прозрачности и надёжной доставке.",
+    "Product Design": "Дизайн продукта",
+    "Brief, specifications and drawings": "Бриф, спецификации и чертежи",
+    "Mold development and material selection": "Разработка пресс-форм и выбор материалов",
+    "Prototype testing and client approval": "Испытания прототипа и утверждение клиентом",
+    "Injection molding and assembly": "Литьё под давлением и сборка",
+    "In-line and pre-shipment inspection": "Инспекция в процессе производства и перед отгрузкой",
+    "Packaging, documents and container loading": "Упаковка, документы и загрузка контейнера",
+    "Loading": "Загрузка",
+    "Factory Tour": "Экскурсия по фабрике",
+    "ABERO office gallery": "Галерея офиса ABERO",
+    "ABERO toy showroom": "Шоурум игрушек ABERO",
+    "ABERO toy factory production floor": "Производственный цех фабрики игрушек ABERO",
+    "Explore ABERO's toy factory profile, showroom, production capacity, quality standards, and OEM/ODM manufacturing services.": "Узнайте о фабрике игрушек ABERO, шоуруме, производственной мощности, стандартах качества и услугах OEM/ODM.",
+    "Europe · South America · Southeast Asia · Middle East · Africa": "Европа · Южная Америка · Юго-Восточная Азия · Ближний Восток · Африка",
+    "Six controlled stages from brief to shipment": "Шесть контролируемых этапов от брифа до отгрузки",
+    "Every stage closes with a clear deliverable or approval, keeping cost, timing, product quality, and export requirements aligned.": "Каждый этап завершается понятным результатом или утверждением, чтобы согласовать стоимость, сроки, качество и экспортные требования.",
+    "ABERO manufacturing workflow": "Производственный процесс ABERO",
+    "Project brief": "Бриф проекта",
+    "Target market, function, price, quantity, packaging, timing, and compliance.": "Целевой рынок, функции, цена, количество, упаковка, сроки и соответствие требованиям.",
+    "Approval · Commercial brief": "Утверждение · Коммерческий бриф",
+    "Engineering review": "Инженерная проверка",
+    "Materials, construction, process, cost, factory route, and feasibility.": "Материалы, конструкция, процесс, стоимость, производственный маршрут и реализуемость.",
+    "Approval · Technical route": "Утверждение · Технический маршрут",
+    "Tooling & sampling": "Оснастка и образцы",
+    "Tool development, prototype testing, refinement, and client confirmation.": "Разработка оснастки, испытания прототипа, доработка и подтверждение клиентом.",
+    "Approval · Golden sample": "Утверждение · Эталонный образец",
+    "Control · Schedule & specification": "Контроль · График и спецификация",
+    "Quality release": "Разрешение по качеству",
+    "Pre-production, in-line, and pre-shipment inspection checkpoints.": "Контрольные точки до производства, в процессе и перед отгрузкой.",
+    "Approval · Inspection result": "Утверждение · Результат инспекции",
+    "Export preparation": "Подготовка к экспорту",
+    "Final cartons, documents, consolidation, loading, and shipment coordination.": "Итоговые короба, документы, консолидация, погрузка и координация отгрузки.",
+    "Outcome · Export-ready order": "Результат · Заказ готов к экспорту",
+    "3-stage quality control": "Трёхэтапный контроль качества",
+    "Checks follow the order, not just the final carton.": "Проверки сопровождают весь заказ, а не только готовый короб.",
+    "Materials and approved sample": "Материалы и утверждённый образец",
+    "Process, assembly, and consistency": "Процесс, сборка и стабильность",
+    "Quantity, packing, and release": "Количество, упаковка и разрешение",
+    "A showroom built for range selection": "Шоурум для подбора ассортимента",
+    "ABERO showroom meeting area": "Переговорная зона шоурума ABERO",
+    "ABERO toy production workshop": "Цех производства игрушек ABERO",
+    "ABERO production equipment": "Производственное оборудование ABERO",
+    "ABERO quality inspection": "Инспекция качества ABERO",
+    "ABERO packaging and finished goods": "Упаковка и готовая продукция ABERO",
+    "ABERO supports supplier selection, quotations, sampling, production follow-up, quality inspection, and export coordination across China.": "ABERO помогает с выбором поставщиков, расчётами, образцами, контролем производства и качества, а также экспортной координацией по всему Китаю.",
+    "Replace with the client's final sourcing cover when supplied.": "Заменить на финальное изображение сорсинга после получения от клиента.",
+    "One sourcing team from search to shipment": "Одна команда сорсинга от поиска до отгрузки",
+    "Our Shantou and Yiwu teams coordinate the same commercial brief, supplier comparison, sampling, production follow-up, quality inspection, and export plan.": "Команды в Шаньтоу и Иу работают по единому коммерческому брифу, сравнению поставщиков, образцам, контролю производства и качества и экспортному плану.",
+    "ABERO China sourcing network and workflow": "Сеть и процесс сорсинга ABERO в Китае",
+    "Office 01": "Офис 01",
+    "Shantou": "Шаньтоу",
+    "Toys, plastics, ride-ons, electronics, and showrooms": "Игрушки, пластик, детский транспорт, электроника и шоурумы",
+    "Office 02": "Офис 02",
+    "Small commodities, accessories, seasonal, and promotional products": "Мелкие товары, аксессуары, сезонная и рекламная продукция",
+    "ABERO coordination hub": "Координационный центр ABERO",
+    "One accountable team": "Одна ответственная команда",
+    "One brief · one comparison format · one quality plan · one export route": "Один бриф · один формат сравнения · один план качества · один экспортный маршрут",
+    "Supplier search": "Поиск поставщиков",
+    "Capability and MOQ match": "Соответствие возможностей и MOQ",
+    "Price, terms, timing": "Цена, условия и сроки",
+    "Specification and quality": "Спецификация и качество",
+    "Schedule and status": "График и статус",
+    "Checks before release": "Проверки перед выпуском",
+    "Documents and loading": "Документы и погрузка",
+    "Buyer receives": "Покупатель получает",
+    "Comparable offers, approved samples, and export-ready orders": "Сопоставимые предложения, утверждённые образцы и готовые к экспорту заказы",
+    "Regional strengths help narrow the search and improve the fit between a product requirement and a supplier's actual capability.": "Региональные преимущества сужают поиск и помогают подобрать реальные возможности поставщика под требования продукта.",
+    "Add the four final regional photographs as card backgrounds when supplied.": "Добавить четыре финальные региональные фотографии в фон карточек после получения.",
+    "Replace with the client's final sourcing team photo when supplied.": "Заменить на финальную фотографию команды сорсинга после получения от клиента.",
+    "ABERO product range selection team": "Команда ABERO по подбору ассортимента",
+    "News & Fairs — ABERO Toys": "Новости и выставки — ABERO Toys",
+    "Meet ABERO at major international toy fairs and arrange factory, showroom, and sourcing meetings with our team in China.": "Встречайтесь с ABERO на международных выставках игрушек и организуйте визиты на фабрику, в шоурум и встречи по сорсингу с нашей командой в Китае.",
+    "ABERO booth at an international toy fair": "Стенд ABERO на международной выставке игрушек",
+    "China Toy Expo": "China Toy Expo",
+    "Shanghai · Major professional toy and licensing exhibition": "Шанхай · Крупная профессиональная выставка игрушек и лицензирования",
+    "ABERO exhibition gallery": "Выставочная галерея ABERO",
+    "ABERO exhibition product display": "Выставочная экспозиция продукции ABERO",
+    "Front view of ABERO exhibition booth": "Фронтальный вид выставочного стенда ABERO",
+    "ABERO team at an international exhibition": "Команда ABERO на международной выставке",
+    "Arrange a meeting →": "Назначить встречу →",
+    "Learn about ABERO's Shantou team, facilities, showroom, supplier network, and international toy manufacturing and sourcing services.": "Узнайте о команде ABERO в Шаньтоу, объектах, шоуруме, сети поставщиков и международных услугах производства и сорсинга игрушек.",
+    "Contact ABERO in Shantou and Yiwu about toy manufacturing, OEM/ODM development, sourcing, quality control, and export preparation.": "Свяжитесь с ABERO в Шаньтоу и Иу по вопросам производства игрушек, OEM/ODM-разработки, сорсинга, контроля качества и подготовки к экспорту."
   };
 
   window.ABERO_TRANSLATIONS = {
-    ru: Object.assign(
-      {},
-      common,
-      home,
-      about,
-      manufacturing,
-      sourcing,
-      news,
-      contact,
-      revisions,
-      imageText,
-    ),
+    ru: Object.assign({}, common, home, about, manufacturing, sourcing, news, contact, revisions, imageText, currentBuild),
   };
 })();
