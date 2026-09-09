@@ -1,6 +1,6 @@
 /* ABERO About page styles */
 .facility-carousel {
-  min-height: 570px;
+  min-height: 680px;
   overflow: hidden;
   border-radius: 24px;
   background: var(--navy-2);
@@ -10,13 +10,19 @@
 .facility-carousel .image-slide {
   position: absolute;
   inset: 0;
-  display: none;
+  display: block;
   border-radius: 0;
   box-shadow: none;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 650ms ease,
+    visibility 650ms ease;
 }
 
 .facility-carousel .image-slide.active {
-  display: block;
+  opacity: 1;
+  visibility: visible;
   transform: none;
 }
 
@@ -24,6 +30,33 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Position the vertical photos without creating side borders. */
+.facility-carousel .image-slide:nth-child(1) img {
+  object-position: center 68%;
+}
+
+.facility-carousel .image-slide:nth-child(7) img {
+  object-position: center 58%;
+}
+
+.facility-carousel .carousel-btn {
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+}
+
+.facility-carousel .carousel-btn svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .facility-carousel .image-slide p {
@@ -43,15 +76,16 @@
 
 @media (max-width: 520px) {
   .facility-carousel {
-    min-height: 390px;
+    min-height: 460px;
   }
 }
 
 .split-feature {
+  width: min(1440px, calc(100% - 48px));
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  grid-template-columns: minmax(360px, 0.78fr) minmax(0, 1.22fr);
   align-items: center;
-  gap: 76px;
+  gap: 56px;
 }
 
 .split-feature > * {

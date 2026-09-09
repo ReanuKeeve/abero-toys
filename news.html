@@ -69,34 +69,53 @@
               showroom, and sourcing visits in China.
             </p>
           </div>
-          <div class="event-grid">
-            <article class="event-card">
-              <span class="event-icon">HK</span>
-              <p class="event-month">January</p>
-              <h3>Hong Kong Toys &amp; Games Fair</h3>
-              <p>Hong Kong · International sourcing and product showcase</p>
-              <a href="contact.html#inquiry">Arrange a meeting →</a>
+          <div class="fair-city-grid">
+            <article class="fair-city-card">
+              <img src="assets/images/cities/hk.webp" alt="Hong Kong skyline" />
+
+              <div class="fair-city-content">
+                <span class="fair-city-number">01</span>
+                <p class="fair-city-month">January</p>
+                <h3>Hong Kong</h3>
+                <p class="fair-city-name">Hong Kong Toys &amp; Games Fair</p>
+                <a href="contact.html#inquiry">Arrange a meeting →</a>
+              </div>
             </article>
-            <article class="event-card">
-              <span class="event-icon">DE</span>
-              <p class="event-month">February</p>
-              <h3>Spielwarenmesse</h3>
-              <p>Nuremberg · Global toy-industry event</p>
-              <a href="contact.html#inquiry">Arrange a meeting →</a>
+
+            <article class="fair-city-card">
+              <img src="assets/images/cities/nuremberg.webp" alt="Nuremberg city center" />
+
+              <div class="fair-city-content">
+                <span class="fair-city-number">02</span>
+                <p class="fair-city-month">February</p>
+                <h3>Nuremberg</h3>
+                <p class="fair-city-name">Spielwarenmesse</p>
+                <a href="contact.html#inquiry">Arrange a meeting →</a>
+              </div>
             </article>
-            <article class="event-card">
-              <span class="event-icon">GZ</span>
-              <p class="event-month">April–May · October–November</p>
-              <h3>Canton Fair</h3>
-              <p>Guangzhou · Multi-category international trade event</p>
-              <a href="contact.html#inquiry">Arrange a meeting →</a>
+
+            <article class="fair-city-card">
+              <img src="assets/images/cities/gz.webp" alt="Guangzhou skyline" />
+
+              <div class="fair-city-content">
+                <span class="fair-city-number">03</span>
+                <p class="fair-city-month">April–May · October–November</p>
+                <h3>Guangzhou</h3>
+                <p class="fair-city-name">Canton Fair</p>
+                <a href="contact.html#inquiry">Arrange a meeting →</a>
+              </div>
             </article>
-            <article class="event-card">
-              <span class="event-icon">SH</span>
-              <p class="event-month">October</p>
-              <h3>China Toy Expo</h3>
-              <p>Shanghai · Major professional toy and licensing exhibition</p>
-              <a href="contact.html#inquiry">Arrange a meeting →</a>
+
+            <article class="fair-city-card">
+              <img src="assets/images/cities/sh.webp" alt="Shanghai skyline" />
+
+              <div class="fair-city-content">
+                <span class="fair-city-number">04</span>
+                <p class="fair-city-month">October</p>
+                <h3>Shanghai</h3>
+                <p class="fair-city-name">China Toy Expo</p>
+                <a href="contact.html#inquiry">Arrange a meeting →</a>
+              </div>
             </article>
           </div>
         </div>
@@ -104,7 +123,11 @@
 
       <section class="content-section dark-section fair-gallery-section">
         <div class="container">
-          <div class="fair-carousel carousel" aria-label="ABERO exhibition gallery">
+          <div
+            class="fair-carousel carousel"
+            data-autoplay="5000"
+            aria-label="ABERO exhibition gallery"
+          >
             <article class="gallery-slide active">
               <img src="assets/images/exhibitions/stand.webp" alt="ABERO exhibition stand" />
               <p>ABERO exhibition stand</p>
@@ -134,18 +157,27 @@
               <img src="assets/images/exhibitions/team.webp" alt="ABERO exhibition team" />
               <p>ABERO team</p>
             </article>
-            <button
-              class="carousel-btn carousel-prev"
-              type="button"
-              aria-label="Previous gallery image"
-            >
-              ‹</button
-            ><button
-              class="carousel-btn carousel-next"
-              type="button"
-              aria-label="Next gallery image"
-            >
-              ›
+            <article class="gallery-slide">
+              <img src="assets/images/exhibitions/fair_01.webp" alt="ABERO exhibition booth" />
+              <p>Exhibition booth</p>
+            </article>
+            <article class="gallery-slide">
+              <img src="assets/images/exhibitions/fair_02.webp" alt="ABERO exhibition booth" />
+              <p>Exhibition booth</p>
+            </article>
+            <article class="gallery-slide">
+              <img src="assets/images/exhibitions/main-stand.webp" alt="ABERO exhibition stand" />
+              <p>Exhibition stand</p>
+            </article>
+            <button class="carousel-btn carousel-prev" type="button" aria-label="Previous image">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M16 5 8 12 16 19" />
+              </svg>
+            </button>
+            <button class="carousel-btn carousel-next" type="button" aria-label="Next image">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="m8 5 8 7-8 7" />
+              </svg>
             </button>
             <div class="carousel-dots"></div>
           </div>

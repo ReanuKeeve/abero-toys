@@ -239,6 +239,8 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
   const previous = carousel.querySelector(".carousel-prev");
   const next = carousel.querySelector(".carousel-next");
   const dotsContainer = carousel.querySelector(".carousel-dots");
+  const autoplayDelay = Number.parseInt(carousel.dataset.autoplay || "", 10);
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   if (slides.length < 2) return;
 
@@ -246,13 +248,36 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     0,
     slides.findIndex((slide) => slide.classList.contains("active"))
   );
+  let autoplayTimer;
+
+  function stopAutoplay() {
+    window.clearTimeout(autoplayTimer);
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+
+    if (!autoplayDelay || reducedMotion || document.hidden || carousel.matches(":focus-within")) {
+      return;
+    }
+
+    autoplayTimer = window.setTimeout(() => {
+      showSlide(activeIndex + 1, false);
+      startAutoplay();
+    }, autoplayDelay);
+  }
+
+  function selectSlide(index) {
+    showSlide(index);
+    startAutoplay();
+  }
 
   const dots = slides.map((_, index) => {
     const dot = document.createElement("button");
     dot.type = "button";
     dot.className = "carousel-dot";
     dot.setAttribute("aria-label", `Show image ${index + 1}`);
-    dot.addEventListener("click", () => showSlide(index));
+    dot.addEventListener("click", () => selectSlide(index));
     dotsContainer?.appendChild(dot);
     return dot;
   });
@@ -261,9 +286,11 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     activeIndex = (index + slides.length) % slides.length;
     slides.forEach((slide, slideIndex) => {
       slide.classList.toggle("active", slideIndex === activeIndex);
+      slide.setAttribute("aria-hidden", String(slideIndex !== activeIndex));
     });
     dots.forEach((dot, dotIndex) => {
       dot.classList.toggle("active", dotIndex === activeIndex);
+      dot.setAttribute("aria-current", dotIndex === activeIndex ? "true" : "false");
     });
     if (shouldScroll) {
       slides[activeIndex].scrollIntoView({
@@ -274,9 +301,15 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     }
   }
 
-  previous?.addEventListener("click", () => showSlide(activeIndex - 1));
-  next?.addEventListener("click", () => showSlide(activeIndex + 1));
+  previous?.addEventListener("click", () => selectSlide(activeIndex - 1));
+  next?.addEventListener("click", () => selectSlide(activeIndex + 1));
+  carousel.addEventListener("focusin", stopAutoplay);
+  carousel.addEventListener("focusout", (event) => {
+    if (!carousel.contains(event.relatedTarget)) startAutoplay();
+  });
+  document.addEventListener("visibilitychange", startAutoplay);
   showSlide(activeIndex, false);
+  startAutoplay();
 });
 
 const exhibitionModal = document.querySelector("#exhibition-modal");

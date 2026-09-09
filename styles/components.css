@@ -218,6 +218,8 @@
   height: 46px;
   display: grid;
   place-items: center;
+  margin: 0;
+  padding: 0;
   border: 0;
   border-radius: 999px;
   background: var(--white);
@@ -628,16 +630,7 @@
   background: var(--gradient-main);
 }
 
-.page-hero {
-  position: relative;
-  min-height: 720px;
-  padding: 0;
-  display: flex;
-  align-items: stretch;
-  overflow: hidden;
-  background: var(--navy);
-  color: var(--white);
-}
+
 
 .page-hero-media,
 .page-hero-shade {
@@ -647,11 +640,29 @@
   height: 100%;
 }
 
+.page-hero {
+  position: relative;
+  min-height: 0;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+  background: var(--navy);
+  color: var(--white);
+}
+
 .page-hero-media {
-  object-fit: cover;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .page-hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   background:
     linear-gradient(
       90deg,
@@ -664,9 +675,10 @@
 }
 
 .page-hero-inner {
-  position: relative;
+  position: absolute;
+  inset: 0;
   z-index: 2;
-  min-height: inherit;
+  min-height: 0;
   padding-top: 112px;
   padding-bottom: 100px;
   display: flex;
@@ -872,24 +884,45 @@
   }
 
   .page-hero {
-    min-height: 670px;
+    min-height: 0;
+    flex-direction: column;
+  }
+
+  .page-hero-media {
+    position: static;
+    height: auto;
+    object-fit: contain;
+    transform: none;
+    will-change: auto;
+  }
+
+  .page-hero-shade {
+    display: none;
   }
 
   .page-hero-inner {
-    padding-top: 80px;
-    padding-bottom: 74px;
+    min-height: 0;
+    padding-top: 32px;
+    padding-bottom: 40px;
   }
 
-  .page-hero-inner h1 {
-    font-size: clamp(3rem, 12vw, 5rem);
-  }
-
-  .language-russian .page-hero-inner h1 {
-    font-size: clamp(2.7rem, 10.5vw, 4.3rem);
+  .page-hero-inner h1,
+  .language-russian .page-hero-inner h1,
+  .language-spanish .page-hero-inner h1 {
+    margin-bottom: 20px;
+    font-size: clamp(2rem, 7.5vw, 3.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+    overflow-wrap: anywhere;
   }
 
   .page-hero-inner > p {
-    font-size: 1.05rem;
+    margin-bottom: 24px;
+    font-size: 1rem;
+  }
+
+  .page-hero-inner > :last-child {
+    margin-bottom: 0;
   }
 
   .metric-grid {
@@ -921,6 +954,8 @@
     align-items: flex-start;
     flex-direction: column;
   }
+
+  
 }
 
 @media (max-width: 520px) {

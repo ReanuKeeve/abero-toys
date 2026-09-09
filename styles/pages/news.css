@@ -1,6 +1,8 @@
 /* ABERO News & Fairs page styles */
-.page-hero-compact {
-  min-height: 620px;
+.page-hero-compact .page-hero-media {
+  object-fit: contain;
+  transform: none;
+  will-change: auto;
 }
 
 .fair-carousel .gallery-slide p {
@@ -18,56 +20,14 @@
   backdrop-filter: blur(12px);
 }
 
-.event-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-}
-
-.event-card {
-  min-height: 260px;
-  padding: 30px;
-  border: 1px solid var(--border-dark);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.045);
-}
-
-.event-icon {
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: rgba(36, 213, 242, 0.12);
-  color: var(--cyan);
-  font-size: 0.72rem;
-  font-weight: 900;
-}
-
-.event-month {
-  margin: 24px 0 8px;
-  color: var(--cyan);
-  font-size: 0.78rem;
-  font-weight: 850;
-  text-transform: uppercase;
-}
-
-.event-card h3 {
-  color: var(--white);
-}
-
-.event-card a {
-  color: var(--cyan);
-  font-size: 0.87rem;
-  font-weight: 850;
-}
-
 .fair-gallery-section {
   padding-top: 0;
 }
 
 .fair-carousel {
-  min-height: 500px;
+  width: 100%;
+  aspect-ratio: 1;
+  margin-inline: auto;
   overflow: hidden;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.04);
@@ -92,26 +52,28 @@
   object-fit: cover;
 }
 
+.fair-carousel .carousel-btn {
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+}
+
+.fair-carousel .carousel-btn svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .page-cta-copy {
   max-width: 760px;
   margin: 18px 0 0;
   color: rgba(255, 255, 255, 0.74);
-}
-
-@media (max-width: 820px) {
-  .event-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .fair-carousel {
-    min-height: 420px;
-  }
-}
-
-@media (max-width: 520px) {
-  .fair-carousel {
-    min-height: 360px;
-  }
 }
 
 .featured-story figure figcaption {
@@ -283,10 +245,6 @@
 }
 
 @media (max-width: 820px) {
-  .page-hero-compact {
-    min-height: 670px;
-  }
-
   .article-grid {
     grid-template-columns: 1fr;
   }
@@ -304,5 +262,106 @@
 
   .article-card h3 {
     min-height: auto;
+  }
+}
+
+
+.fair-city-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.fair-city-card {
+  position: relative;
+  min-height: 310px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--navy);
+  isolation: isolate;
+}
+
+.fair-city-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(6, 21, 43, 0.06) 18%,
+      rgba(6, 21, 43, 0.94) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(6, 21, 43, 0.3),
+      transparent 75%
+    );
+}
+
+.fair-city-card img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.fair-city-content {
+  position: relative;
+  min-height: 310px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.fair-city-number {
+  position: absolute;
+  top: 26px;
+  left: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.fair-city-month {
+  margin: 0 0 8px;
+  color: var(--cyan);
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.fair-city-card h3 {
+  margin: 0 0 7px;
+  color: var(--white);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+}
+
+.fair-city-name {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.95rem;
+  font-weight: 650;
+}
+
+.fair-city-card a {
+  width: fit-content;
+  color: var(--cyan);
+  font-size: 0.87rem;
+  font-weight: 850;
+}
+
+.fair-city-card:hover img {
+  transform: scale(1.035);
+}
+
+@media (max-width: 820px) {
+  .fair-city-grid {
+    grid-template-columns: 1fr;
   }
 }
