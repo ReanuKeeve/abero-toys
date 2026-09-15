@@ -105,14 +105,17 @@ function applyLanguage(language) {
   translateTextNodes(activeLanguage);
   translatePageAttributes(activeLanguage);
 
-  document.title = activeLanguage === "en"
-    ? originalDocumentTitle
-    : translate(originalDocumentTitle, activeLanguage);
+  document.title =
+    activeLanguage === "en"
+      ? originalDocumentTitle
+      : translate(originalDocumentTitle, activeLanguage);
 
   if (descriptionMeta) {
     descriptionMeta.setAttribute(
       "content",
-      activeLanguage === "en" ? originalDescription : translate(originalDescription, activeLanguage)
+      activeLanguage === "en"
+        ? originalDescription
+        : translate(originalDescription, activeLanguage),
     );
   }
 
@@ -133,7 +136,7 @@ function applyLanguage(language) {
   }
 
   document.dispatchEvent(
-    new CustomEvent("abero:languagechange", { detail: { language: activeLanguage } })
+    new CustomEvent("abero:languagechange", { detail: { language: activeLanguage } }),
   );
 }
 
@@ -233,9 +236,7 @@ if (videoCard && factoryVideo && videoPlayButton) {
 }
 
 document.querySelectorAll(".carousel").forEach((carousel) => {
-  const slides = Array.from(
-    carousel.querySelectorAll(".image-slide, .gallery-slide")
-  );
+  const slides = Array.from(carousel.querySelectorAll(".image-slide, .gallery-slide"));
   const previous = carousel.querySelector(".carousel-prev");
   const next = carousel.querySelector(".carousel-next");
   const dotsContainer = carousel.querySelector(".carousel-dots");
@@ -246,7 +247,7 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
 
   let activeIndex = Math.max(
     0,
-    slides.findIndex((slide) => slide.classList.contains("active"))
+    slides.findIndex((slide) => slide.classList.contains("active")),
   );
   let autoplayTimer;
 
@@ -360,14 +361,66 @@ if (exhibitionModal) {
   });
 }
 
+const CONTACT_API_URL = "http://172.20.103.215:3000/api/contact";
+
 document.querySelectorAll("[data-demo-form]").forEach((form) => {
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
+
     const status = form.querySelector(".form-status");
+    const submitButton = form.querySelector('button[type="submit"]');
+    const formData = new FormData(form);
+
+    const payload = {
+      name: String(formData.get("name") || "").trim(),
+      email: String(formData.get("email") || "").trim(),
+      company: String(formData.get("company") || "").trim(),
+      market: String(formData.get("market") || "").trim(),
+      projectType: String(formData.get("project-type") || "").trim(),
+      quantity: String(formData.get("quantity") || "").trim(),
+      timing: String(formData.get("timing") || "").trim(),
+      message: String(formData.get("message") || "").trim(),
+      fileNote: String(formData.get("file-note") || "").trim(),
+      website: String(formData.get("website") || "").trim(),
+    };
+
+    submitButton.disabled = true;
+
     if (status) {
-      status.dataset.i18nSource =
-        "Form layout complete — connect ABERO’s email inbox or CRM to receive submissions.";
+      status.dataset.i18nSource = "Sending your inquiry…";
       status.textContent = translate(status.dataset.i18nSource);
+    }
+
+    try {
+      const response = await fetch(CONTACT_API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || "Submission failed.");
+      }
+
+      form.reset();
+
+      if (status) {
+        status.dataset.i18nSource = "Thank you. Your inquiry has been received.";
+        status.textContent = translate(status.dataset.i18nSource);
+      }
+    } catch (error) {
+      console.error("Contact form error:", error);
+
+      if (status) {
+        status.dataset.i18nSource = "Unable to send your inquiry. Please try again.";
+        status.textContent = translate(status.dataset.i18nSource);
+      }
+    } finally {
+      submitButton.disabled = false;
     }
   });
 });
@@ -403,7 +456,7 @@ function setupSiteMotion() {
     ".card-carousel",
     ".gallery-carousel",
     ".image-frame",
-    ".contact-form"
+    ".contact-form",
   ];
 
   revealSelectors.forEach((selector) => {
@@ -430,7 +483,7 @@ function setupSiteMotion() {
     ".event-list",
     ".news-grid",
     ".cert-grid",
-    ".footer-grid"
+    ".footer-grid",
   ];
 
   staggerGroups.forEach((selector) => {
@@ -453,7 +506,7 @@ function setupSiteMotion() {
         observer.unobserve(entry.target);
       });
     },
-    { threshold: 0.12, rootMargin: "0px 0px -7%" }
+    { threshold: 0.12, rootMargin: "0px 0px -7%" },
   );
 
   requestAnimationFrame(() => {
@@ -481,7 +534,7 @@ function setupSiteMotion() {
       frameRequested = true;
       requestAnimationFrame(updateHeroMedia);
     },
-    { passive: true }
+    { passive: true },
   );
 }
 
